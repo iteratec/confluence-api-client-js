@@ -1,0 +1,26 @@
+{
+  "name": "the_confluence_cloud_rest_api",
+  "version": "1.0.0",
+  "description": "This_document_describes_the_REST_API_and_resources_provided_by_Confluence__The_REST_APIs_are_for_developers_who_want_to_integrate_Confluence_into_their_application_and_for_administrators_who_want_to_script_interactions_with_the_Confluence_server_Confluences_REST_APIs_provide_access_to_resources__data_entities_via_URI_paths__To_use_a_REST_API_your_application_will_make_an_HTTP_request_and_parse_the_response__The_response_format_is_JSON__Your_methods_will_be_the_standard_HTTP_methods_like_GET_PUT_POST_and_DELETE__Because_the_REST_API_is_based_on_open_standards_you_can_use_any_web_development_language_to_access_the_API_",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  }
+}
