@@ -29,35 +29,39 @@ import querystring from "querystring";
 * @class
 */
 export default class ApiClient {
-    constructor() {
+    constructor(options) {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
          * @default //your-domain.atlassian.net/wiki/rest
          */
-        this.basePath = '//your-domain.atlassian.net/wiki/rest'.replace(/\/+$/, '');
+        const server = options && options.server ? options.server : "your-domain.atlassian.net";
+        const contextPath = options && options.context ? `${options.context}/` : "wiki/";
+        const protocol = options && options.protocol ? `${options.protocol}` : "https";
+
+        this.basePath = options && options.basePath ? options.basePath : `${protocol}://${server}/${contextPath}rest`;
 
         /**
          * The authentication methods to be included for all API calls.
          * @type {Array.<String>}
          */
-        this.authentications = {
+        this.authentications = options && options.authentications ? options.authentications : {
             'oAuthDefinitions': {type: 'oauth2'}
-        }
+        };
 
         /**
          * The default HTTP headers to be included for all API calls.
          * @type {Array.<String>}
          * @default {}
          */
-        this.defaultHeaders = {};
+        this.defaultHeaders = options && options.headers ? options.headers : {};
 
         /**
          * The default HTTP timeout for all API calls.
          * @type {Number}
          * @default 60000
          */
-        this.timeout = 60000;
+        this.timeout = options && options.timeout ? options.timeout : 60000;
 
         /**
          * If set to false an additional timestamp parameter is added to all API GET calls to
@@ -65,14 +69,14 @@ export default class ApiClient {
          * @type {Boolean}
          * @default true
          */
-        this.cache = true;
+        this.cache = options && options.cache ? options.cache : true;
 
         /**
          * If set to true, the client will save the cookies from each server
          * response, and return them in the next request.
          * @default false
          */
-        this.enableCookies = false;
+        this.enableCookies = options && options.enableCookies ? options.enableCookies : false;
 
         /*
          * Used to save and return cookies in a node.js (non-browser) setting,
@@ -394,7 +398,7 @@ export default class ApiClient {
 
         // set query parameters
         if (httpMethod.toUpperCase() === 'GET' && this.cache === false) {
-            queryParams['_'] = new Date().getTime();
+            queryParams._ = new Date().getTime();
         }
 
         request.query(this.normalizeParams(queryParams));
@@ -501,7 +505,7 @@ export default class ApiClient {
     */
     static convertToType(data, type) {
         if (data === null || data === undefined)
-            return data
+            return data;
 
         switch (type) {
             case 'Boolean':
@@ -542,10 +546,10 @@ export default class ApiClient {
                     }
 
                     var result = {};
-                    for (var k in data) {
-                        if (data.hasOwnProperty(k)) {
-                            var key = ApiClient.convertToType(k, keyType);
-                            var value = ApiClient.convertToType(data[k], valueType);
+                    for (var kk in data) {
+                        if (data.hasOwnProperty(kk)) {
+                            var key = ApiClient.convertToType(kk, keyType);
+                            var value = ApiClient.convertToType(data[kk], valueType);
                             result[key] = value;
                         }
                     }
@@ -575,7 +579,7 @@ export default class ApiClient {
                     obj[k] = ApiClient.convertToType(data[k], itemType);
             }
         }
-    };
+    }
 }
 
 /**
