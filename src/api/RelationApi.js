@@ -36,8 +36,8 @@ export default class RelationApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesRelationResourceCreateRelationshipPut operation.
-     * @callback module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceCreateRelationshipPutCallback
+     * Callback function to receive the result of the confluenceRelationResourceCreateRelationshipPut operation.
+     * @callback module:api/RelationApi~confluenceRelationResourceCreateRelationshipPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Relation} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,10 +47,10 @@ export default class RelationApi {
      * Create relationship
      * Creates a relationship between two entities (user, space, content). The &#x27;favourite&#x27; relationship is supported by default, but you can use this method to create any type of relationship between two entities.  For example, the following method creates a &#x27;sibling&#x27; relationship between two pieces of content: &#x60;GET https://your-domain.atlassian.net/wiki/rest/api/relation/sibling/from/content/123/to/content/456&#x60;  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceCreateRelationshipPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/RelationApi~confluenceRelationResourceCreateRelationshipPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Relation}
      */
-    comAtlassianConfluencePluginsRestapiResourcesRelationResourceCreateRelationshipPut(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
+    confluenceRelationResourceCreateRelationshipPut(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -84,8 +84,8 @@ export default class RelationApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesRelationResourceDeleteDelete operation.
-     * @callback module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceDeleteDeleteCallback
+     * Callback function to receive the result of the confluenceRelationResourceDeleteDelete operation.
+     * @callback module:api/RelationApi~confluenceRelationResourceDeleteDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -95,9 +95,9 @@ export default class RelationApi {
      * Delete
      * Deletes a relationship between two entities (user, space, content).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission). For favourite relationships, the current user can only delete their own favourite relationships. A space administrator can delete favourite relationships for any user.
      * @param {Object} opts Optional parameters
-     * @param {module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceDeleteDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/RelationApi~confluenceRelationResourceDeleteDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesRelationResourceDeleteDelete(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
+    confluenceRelationResourceDeleteDelete(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -131,8 +131,8 @@ export default class RelationApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindSourcesForTargetGet operation.
-     * @callback module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindSourcesForTargetGetCallback
+     * Callback function to receive the result of the confluenceRelationResourceFindSourcesForTargetGet operation.
+     * @callback module:api/RelationApi~confluenceRelationResourceFindSourcesForTargetGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RelationArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -142,10 +142,10 @@ export default class RelationApi {
      * Find target entities related to a source entity
      * Returns all target entities that have a particular relationship to the source entity. Note, relationships are one way.  For example, the following method finds all users that have a &#x27;collaborator&#x27; relationship to a piece of content with an ID of &#x27;1234&#x27;: &#x60;GET https://your-domain.atlassian.net/wiki/rest/api/relation/collaborator/to/content/1234/from/user&#x60; Note, &#x27;collaborator&#x27; is an example custom relationship type.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view both the target entity and source entity.
      * @param {Object} opts Optional parameters
-     * @param {module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindSourcesForTargetGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/RelationApi~confluenceRelationResourceFindSourcesForTargetGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindSourcesForTargetGet(relationName, sourceType, targetType, targetKey, opts, callback) {
+    confluenceRelationResourceFindSourcesForTargetGet(relationName, sourceType, targetType, targetKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -181,8 +181,8 @@ export default class RelationApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindTargetFromSourceGet operation.
-     * @callback module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindTargetFromSourceGetCallback
+     * Callback function to receive the result of the confluenceRelationResourceFindTargetFromSourceGet operation.
+     * @callback module:api/RelationApi~confluenceRelationResourceFindTargetFromSourceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RelationArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -192,10 +192,10 @@ export default class RelationApi {
      * Find target entities related to a source entity
      * Returns all target entities that have a particular relationship to the source entity. Note, relationships are one way.  For example, the following method finds all content that the current user has an &#x27;ignore&#x27; relationship with: &#x60;GET https://your-domain.atlassian.net/wiki/rest/api/relation/ignore/from/user/current/to/content&#x60; Note, &#x27;ignore&#x27; is an example custom relationship type.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view both the target entity and source entity.
      * @param {Object} opts Optional parameters
-     * @param {module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindTargetFromSourceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/RelationApi~confluenceRelationResourceFindTargetFromSourceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesRelationResourceFindTargetFromSourceGet(relationName, sourceType, sourceKey, targetType, opts, callback) {
+    confluenceRelationResourceFindTargetFromSourceGet(relationName, sourceType, sourceKey, targetType, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -231,8 +231,8 @@ export default class RelationApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesRelationResourceGetRelationshipGet operation.
-     * @callback module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceGetRelationshipGetCallback
+     * Callback function to receive the result of the confluenceRelationResourceGetRelationshipGet operation.
+     * @callback module:api/RelationApi~confluenceRelationResourceGetRelationshipGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Relation} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -242,10 +242,10 @@ export default class RelationApi {
      * Find relationship from source to target
      * Find whether a particular type of relationship exists from a source entity to a target entity. Note, relationships are one way.  For example, you can use this method to find whether the current user has selected a particular page as a favorite (i.e. &#x27;save for later&#x27;): &#x60;GET https://your-domain.atlassian.net/wiki/rest/api/relation/favourite/from/user/current/to/content/123&#x60;  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view both the target entity and source entity.
      * @param {Object} opts Optional parameters
-     * @param {module:api/RelationApi~comAtlassianConfluencePluginsRestapiResourcesRelationResourceGetRelationshipGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/RelationApi~confluenceRelationResourceGetRelationshipGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Relation}
      */
-    comAtlassianConfluencePluginsRestapiResourcesRelationResourceGetRelationshipGet(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
+    confluenceRelationResourceGetRelationshipGet(relationName, sourceType, sourceKey, targetType, targetKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 

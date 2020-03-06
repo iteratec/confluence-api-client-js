@@ -38,8 +38,8 @@ export default class AuditApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceCreateAuditRecordPost operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceCreateAuditRecordPostCallback
+     * Callback function to receive the result of the confluenceAuditResourceCreateAuditRecordPost operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceCreateAuditRecordPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AuditRecord} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -48,10 +48,10 @@ export default class AuditApi {
     /**
      * Create audit record
      * Creates a record in the audit log.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceCreateAuditRecordPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceCreateAuditRecordPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AuditRecord}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceCreateAuditRecordPost(body, callback) {
+    confluenceAuditResourceCreateAuditRecordPost(body, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -75,8 +75,8 @@ export default class AuditApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceExportAuditRecordsGet operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceExportAuditRecordsGetCallback
+     * Callback function to receive the result of the confluenceAuditResourceExportAuditRecordsGet operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceExportAuditRecordsGetCallback
      * @param {String} error Error message, if any.
      * @param {'Blob'} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -86,10 +86,10 @@ export default class AuditApi {
      * Export audit records
      * Exports audit records as a CSV file or ZIP file.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
      * @param {Object} opts Optional parameters
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceExportAuditRecordsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceExportAuditRecordsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link 'Blob'}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceExportAuditRecordsGet(opts, callback) {
+    confluenceAuditResourceExportAuditRecordsGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -118,8 +118,8 @@ export default class AuditApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsForTimePeriodGet operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsForTimePeriodGetCallback
+     * Callback function to receive the result of the confluenceAuditResourceGetAuditRecordsForTimePeriodGet operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceGetAuditRecordsForTimePeriodGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AuditRecordArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -129,10 +129,10 @@ export default class AuditApi {
      * Get audit records for time period
      * Returns records from the audit log, for a time period back from the current date. For example, you can use this method to get the last 3 months of records.  This contains information about events like space exports, group membership changes, app installations, etc. For more information, see [Audit log](https://confluence.atlassian.com/confcloud/audit-log-802164269.html) in the Confluence administrator&#x27;s guide.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
      * @param {Object} opts Optional parameters
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsForTimePeriodGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceGetAuditRecordsForTimePeriodGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AuditRecordArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsForTimePeriodGet(opts, callback) {
+    confluenceAuditResourceGetAuditRecordsForTimePeriodGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -162,8 +162,8 @@ export default class AuditApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsGet operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsGetCallback
+     * Callback function to receive the result of the confluenceAuditResourceGetAuditRecordsGet operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceGetAuditRecordsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AuditRecordArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -173,10 +173,10 @@ export default class AuditApi {
      * Get audit records
      * Returns all records in the audit log, optionally for a certain date range. This contains information about events like space exports, group membership changes, app installations, etc. For more information, see [Audit log](https://confluence.atlassian.com/confcloud/audit-log-802164269.html) in the Confluence administrator&#x27;s guide.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
      * @param {Object} opts Optional parameters
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceGetAuditRecordsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AuditRecordArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetAuditRecordsGet(opts, callback) {
+    confluenceAuditResourceGetAuditRecordsGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -206,8 +206,8 @@ export default class AuditApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetRetentionPeriodGet operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetRetentionPeriodGetCallback
+     * Callback function to receive the result of the confluenceAuditResourceGetRetentionPeriodGet operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceGetRetentionPeriodGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RetentionPeriod} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -216,10 +216,10 @@ export default class AuditApi {
     /**
      * Get retention period
      * Returns the retention period for records in the audit log. The retention period is how long an audit record is kept for, from creation date until it is deleted.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetRetentionPeriodGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceGetRetentionPeriodGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RetentionPeriod}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceGetRetentionPeriodGet(callback) {
+    confluenceAuditResourceGetRetentionPeriodGet(callback) {
       let postBody = null;
 
       let pathParams = {
@@ -243,8 +243,8 @@ export default class AuditApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAuditResourceSetRetentionPeriodPut operation.
-     * @callback module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceSetRetentionPeriodPutCallback
+     * Callback function to receive the result of the confluenceAuditResourceSetRetentionPeriodPut operation.
+     * @callback module:api/AuditApi~confluenceAuditResourceSetRetentionPeriodPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RetentionPeriod} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -253,10 +253,10 @@ export default class AuditApi {
     /**
      * Set retention period
      * Sets the retention period for records in the audit log. The retention period can be set to a maximum of 20 years.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission.
-     * @param {module:api/AuditApi~comAtlassianConfluencePluginsRestapiResourcesAuditResourceSetRetentionPeriodPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/AuditApi~confluenceAuditResourceSetRetentionPeriodPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RetentionPeriod}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAuditResourceSetRetentionPeriodPut(body, callback) {
+    confluenceAuditResourceSetRetentionPeriodPut(body, callback) {
       let postBody = body;
 
       let pathParams = {

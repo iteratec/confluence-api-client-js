@@ -35,8 +35,8 @@ export default class InlineTasksApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTaskSearchResourceSearchTasksGet operation.
-     * @callback module:api/InlineTasksApi~comAtlassianConfluencePluginsRestapiResourcesTaskSearchResourceSearchTasksGetCallback
+     * Callback function to receive the result of the confluenceTaskSearchResourceSearchTasksGet operation.
+     * @callback module:api/InlineTasksApi~confluenceTaskSearchResourceSearchTasksGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/TaskPageResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -46,10 +46,10 @@ export default class InlineTasksApi {
      * Get inline tasks based on search parameters
      * Returns inline tasks based on the search query.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission). Only tasks in contents that the user has permission to view are returned.
      * @param {Object} opts Optional parameters
-     * @param {module:api/InlineTasksApi~comAtlassianConfluencePluginsRestapiResourcesTaskSearchResourceSearchTasksGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/InlineTasksApi~confluenceTaskSearchResourceSearchTasksGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TaskPageResponse}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTaskSearchResourceSearchTasksGet(opts, callback) {
+    confluenceTaskSearchResourceSearchTasksGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 

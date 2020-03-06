@@ -41,8 +41,8 @@ export default class SettingsApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceGetLookAndFeelSettingsGet operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceGetLookAndFeelSettingsGetCallback
+     * Callback function to receive the result of the confluenceLookAndFeelResourceGetLookAndFeelSettingsGet operation.
+     * @callback module:api/SettingsApi~confluenceLookAndFeelResourceGetLookAndFeelSettingsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LookAndFeelSettings} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -52,10 +52,10 @@ export default class SettingsApi {
      * Get look and feel settings
      * Returns the look and feel settings for the site or a single space. This includes attributes such as the color scheme, padding, and border radius.  The look and feel settings for a space can be inherited from the global look and feel settings or provided by a theme.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: None
      * @param {Object} opts Optional parameters
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceGetLookAndFeelSettingsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceLookAndFeelResourceGetLookAndFeelSettingsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LookAndFeelSettings}
      */
-    comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceGetLookAndFeelSettingsGet(opts, callback) {
+    confluenceLookAndFeelResourceGetLookAndFeelSettingsGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -81,8 +81,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceResetLookAndFeelSettingsDelete operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceResetLookAndFeelSettingsDeleteCallback
+     * Callback function to receive the result of the confluenceLookAndFeelResourceResetLookAndFeelSettingsDelete operation.
+     * @callback module:api/SettingsApi~confluenceLookAndFeelResourceResetLookAndFeelSettingsDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -92,9 +92,9 @@ export default class SettingsApi {
      * Reset look and feel settings
      * Resets the custom look and feel settings for the site or a single space. This changes the values of the custom settings to be the same as the default settings. It does not change which settings (default or custom) are selected. Note, the default space settings are inherited from the current global settings.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceResetLookAndFeelSettingsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceLookAndFeelResourceResetLookAndFeelSettingsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceResetLookAndFeelSettingsDelete(opts, callback) {
+    confluenceLookAndFeelResourceResetLookAndFeelSettingsDelete(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -120,8 +120,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceSetLookAndFeelSettingsPut operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceSetLookAndFeelSettingsPutCallback
+     * Callback function to receive the result of the confluenceLookAndFeelResourceSetLookAndFeelSettingsPut operation.
+     * @callback module:api/SettingsApi~confluenceLookAndFeelResourceSetLookAndFeelSettingsPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LookAndFeelSettings} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -131,10 +131,10 @@ export default class SettingsApi {
      * Set look and feel settings
      * Sets the look and feel settings to either the default settings or the custom settings, for the site or a single space. Note, the default space settings are inherited from the current global settings.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceSetLookAndFeelSettingsPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceLookAndFeelResourceSetLookAndFeelSettingsPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LookAndFeelSettings}
      */
-    comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceSetLookAndFeelSettingsPut(body, opts, callback) {
+    confluenceLookAndFeelResourceSetLookAndFeelSettingsPut(body, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -160,8 +160,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceUpdateLookAndFeelSettingsPost operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceUpdateLookAndFeelSettingsPostCallback
+     * Callback function to receive the result of the confluenceLookAndFeelResourceUpdateLookAndFeelSettingsPost operation.
+     * @callback module:api/SettingsApi~confluenceLookAndFeelResourceUpdateLookAndFeelSettingsPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LookAndFeelUpdated} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -171,10 +171,10 @@ export default class SettingsApi {
      * Update look and feel settings
      * Updates the look and feel settings for the site or for a single space. If custom settings exist, they are updated. If no custom settings exist, then a set of custom settings is created.  Note, if a theme is selected for a space, the space look and feel settings are provided by the theme and cannot be overridden.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceUpdateLookAndFeelSettingsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceLookAndFeelResourceUpdateLookAndFeelSettingsPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LookAndFeelUpdated}
      */
-    comAtlassianConfluencePluginsRestapiResourcesLookAndFeelResourceUpdateLookAndFeelSettingsPost(body, opts, callback) {
+    confluenceLookAndFeelResourceUpdateLookAndFeelSettingsPost(body, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -200,8 +200,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSystemInfoResourceGetSystemInfoGet operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesSystemInfoResourceGetSystemInfoGetCallback
+     * Callback function to receive the result of the confluenceSystemInfoResourceGetSystemInfoGet operation.
+     * @callback module:api/SettingsApi~confluenceSystemInfoResourceGetSystemInfoGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SystemInfoEntity} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -210,10 +210,10 @@ export default class SettingsApi {
     /**
      * Get system info
      * Returns the system information for the Confluence Cloud tenant. This information is used by Atlassian.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesSystemInfoResourceGetSystemInfoGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceSystemInfoResourceGetSystemInfoGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SystemInfoEntity}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSystemInfoResourceGetSystemInfoGet(callback) {
+    confluenceSystemInfoResourceGetSystemInfoGet(callback) {
       let postBody = null;
 
       let pathParams = {
@@ -237,8 +237,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetGlobalThemeGet operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetGlobalThemeGetCallback
+     * Callback function to receive the result of the confluenceThemeResourceGetGlobalThemeGet operation.
+     * @callback module:api/SettingsApi~confluenceThemeResourceGetGlobalThemeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Theme} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -247,10 +247,10 @@ export default class SettingsApi {
     /**
      * Get global theme
      * Returns the globally assigned theme.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: None
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetGlobalThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceThemeResourceGetGlobalThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Theme}
      */
-    comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetGlobalThemeGet(callback) {
+    confluenceThemeResourceGetGlobalThemeGet(callback) {
       let postBody = null;
 
       let pathParams = {
@@ -274,8 +274,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemeGet operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemeGetCallback
+     * Callback function to receive the result of the confluenceThemeResourceGetThemeGet operation.
+     * @callback module:api/SettingsApi~confluenceThemeResourceGetThemeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Theme} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -284,10 +284,10 @@ export default class SettingsApi {
     /**
      * Get theme
      * Returns a theme. This includes information about the theme name, description, and icon.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: None
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceThemeResourceGetThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Theme}
      */
-    comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemeGet(themeKey, callback) {
+    confluenceThemeResourceGetThemeGet(themeKey, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -312,8 +312,8 @@ export default class SettingsApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemesGet operation.
-     * @callback module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemesGetCallback
+     * Callback function to receive the result of the confluenceThemeResourceGetThemesGet operation.
+     * @callback module:api/SettingsApi~confluenceThemeResourceGetThemesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ThemeArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -323,10 +323,10 @@ export default class SettingsApi {
      * Get themes
      * Returns all themes, not including the default theme.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: None
      * @param {Object} opts Optional parameters
-     * @param {module:api/SettingsApi~comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SettingsApi~confluenceThemeResourceGetThemesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ThemeArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesThemeResourceGetThemesGet(opts, callback) {
+    confluenceThemeResourceGetThemesGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 

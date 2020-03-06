@@ -37,8 +37,8 @@ export default class GroupApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupGet operation.
-     * @callback module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupGetCallback
+     * Callback function to receive the result of the confluenceGroupResourceGetGroupGet operation.
+     * @callback module:api/GroupApi~confluenceGroupResourceGetGroupGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Group} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,10 +47,10 @@ export default class GroupApi {
     /**
      * Get group
      * Returns a user group for a given group name.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
-     * @param {module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/GroupApi~confluenceGroupResourceGetGroupGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Group}
      */
-    comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupGet(groupName, callback) {
+    confluenceGroupResourceGetGroupGet(groupName, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -75,8 +75,8 @@ export default class GroupApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupMembersGet operation.
-     * @callback module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupMembersGetCallback
+     * Callback function to receive the result of the confluenceGroupResourceGetGroupMembersGet operation.
+     * @callback module:api/GroupApi~confluenceGroupResourceGetGroupMembersGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/UserArrayWithLinks} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -86,10 +86,10 @@ export default class GroupApi {
      * Get group members
      * Returns the users that are members of a group.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupMembersGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/GroupApi~confluenceGroupResourceGetGroupMembersGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UserArrayWithLinks}
      */
-    comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupMembersGet(groupName, opts, callback) {
+    confluenceGroupResourceGetGroupMembersGet(groupName, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -117,8 +117,8 @@ export default class GroupApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupsGet operation.
-     * @callback module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupsGetCallback
+     * Callback function to receive the result of the confluenceGroupResourceGetGroupsGet operation.
+     * @callback module:api/GroupApi~confluenceGroupResourceGetGroupsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/GroupArrayWithLinks} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -128,10 +128,10 @@ export default class GroupApi {
      * Get groups
      * Returns all user groups. The returned groups are ordered alphabetically in ascending order by group name.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/GroupApi~comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/GroupApi~confluenceGroupResourceGetGroupsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/GroupArrayWithLinks}
      */
-    comAtlassianConfluencePluginsRestapiResourcesGroupResourceGetGroupsGet(opts, callback) {
+    confluenceGroupResourceGetGroupsGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 

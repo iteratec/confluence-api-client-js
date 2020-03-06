@@ -59,8 +59,8 @@ export default class ContentApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateAttachmentsPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateAttachmentsPostCallback
+     * Callback function to receive the result of the confluenceAttachmentResourceCreateAttachmentsPost operation.
+     * @callback module:api/ContentApi~confluenceAttachmentResourceCreateAttachmentsPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -70,10 +70,10 @@ export default class ContentApi {
      * Create attachment
      * Adds an attachment to a piece of content. This method only adds a new attachment. If you want to update an existing attachment, use [Create or update attachments](#api-content-id-child-attachment-put).  Note, you must set a &#x60;X-Atlassian-Token: nocheck&#x60; header on the request for this method, otherwise it will be blocked. This protects against XSRF attacks, which is necessary as this method accepts multipart/form-data.  The media type &#x27;multipart/form-data&#x27; is defined in [RFC 1867](https://www.ietf.org/rfc/rfc1867.txt). Most client libraries have classes that make it easier to implement multipart posts, like the [MultiPartEntity](http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html) Java class provided by Apache HTTP Components.  Example: This curl command attaches a file (&#x27;example.txt&#x27;) to a container (id&#x3D;&#x27;123&#x27;) with a comment and &#x60;minorEdits&#x60;&#x3D;true.  &#x60;&#x60;&#x60; bash curl -D- \\   -u admin:admin \\   -X POST \\   -H \&quot;X-Atlassian-Token: nocheck\&quot; \\   -F \&quot;file&#x3D;@example.txt\&quot; \\   -F \&quot;minorEdit&#x3D;true\&quot; \\   -F \&quot;comment&#x3D;Example attachment comment\&quot; \\   http://myhost/rest/api/content/123/child/attachment &#x60;&#x60;&#x60; **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateAttachmentsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceAttachmentResourceCreateAttachmentsPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateAttachmentsPost(id, opts, callback) {
+    confluenceAttachmentResourceCreateAttachmentsPost(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -103,8 +103,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateOrUpdateAttachmentsPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateOrUpdateAttachmentsPutCallback
+     * Callback function to receive the result of the confluenceAttachmentResourceCreateOrUpdateAttachmentsPut operation.
+     * @callback module:api/ContentApi~confluenceAttachmentResourceCreateOrUpdateAttachmentsPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -114,10 +114,10 @@ export default class ContentApi {
      * Create or update attachment
      * Adds an attachment to a piece of content. If the attachment already exists for the content, then the attachment is updated (i.e. a new version of the attachment is created).  Note, you must set a &#x60;X-Atlassian-Token: nocheck&#x60; header on the request for this method, otherwise it will be blocked. This protects against XSRF attacks, which is necessary as this method accepts multipart/form-data.  The media type &#x27;multipart/form-data&#x27; is defined in [RFC 1867](https://www.ietf.org/rfc/rfc1867.txt). Most client libraries have classes that make it easier to implement multipart posts, like the [MultiPartEntity](http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html) Java class provided by Apache HTTP Components.  Example: This curl command attaches a file (&#x27;example.txt&#x27;) to a piece of content (id&#x3D;&#x27;123&#x27;) with a comment and &#x60;minorEdits&#x60;&#x3D;true. If the &#x27;example.txt&#x27; file already exists, it will update it with a new version of the attachment.  &#x60;&#x60;&#x60; bash curl -D- \\   -u admin:admin \\   -X PUT \\   -H \&quot;X-Atlassian-Token: nocheck\&quot; \\   -F \&quot;file&#x3D;@example.txt\&quot; \\   -F \&quot;minorEdit&#x3D;true\&quot; \\   -F \&quot;comment&#x3D;Example attachment comment\&quot; \\   http://myhost/rest/api/content/123/child/attachment &#x60;&#x60;&#x60; **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateOrUpdateAttachmentsPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceAttachmentResourceCreateOrUpdateAttachmentsPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceCreateOrUpdateAttachmentsPut(id, opts, callback) {
+    confluenceAttachmentResourceCreateOrUpdateAttachmentsPut(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -147,8 +147,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceGetAttachmentsGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceGetAttachmentsGetCallback
+     * Callback function to receive the result of the confluenceAttachmentResourceGetAttachmentsGet operation.
+     * @callback module:api/ContentApi~confluenceAttachmentResourceGetAttachmentsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -158,10 +158,10 @@ export default class ContentApi {
      * Get attachments
      * Returns the attachments for a piece of content.  By default, the following objects are expanded: &#x60;metadata&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content. If the content is a blog post, &#x27;View&#x27; permission for the space is required.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceGetAttachmentsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceAttachmentResourceGetAttachmentsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceGetAttachmentsGet(id, opts, callback) {
+    confluenceAttachmentResourceGetAttachmentsGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -192,8 +192,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentDataPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentDataPostCallback
+     * Callback function to receive the result of the confluenceAttachmentResourceUpdateAttachmentDataPost operation.
+     * @callback module:api/ContentApi~confluenceAttachmentResourceUpdateAttachmentDataPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -202,10 +202,10 @@ export default class ContentApi {
     /**
      * Update attachment data
      * Updates the binary data of an attachment, given the attachment ID, and optionally the comment and the minor edit field.  This method is essentially the same as [Create or update attachments](#api-content-id-child-attachment-put), except that it matches the attachment ID rather than the name.  Note, you must set a &#x60;X-Atlassian-Token: nocheck&#x60; header on the request for this method, otherwise it will be blocked. This protects against XSRF attacks, which is necessary as this method accepts multipart/form-data.  The media type &#x27;multipart/form-data&#x27; is defined in [RFC 1867](https://www.ietf.org/rfc/rfc1867.txt). Most client libraries have classes that make it easier to implement multipart posts, like the [MultiPartEntity](http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html) Java class provided by Apache HTTP Components.  Example: This curl command updates an attachment (id&#x3D;&#x27;att456&#x27;) that is attached to a piece of content (id&#x3D;&#x27;123&#x27;) with a comment and &#x60;minorEdits&#x60;&#x3D;true.  &#x60;&#x60;&#x60; bash curl -D- \\   -u admin:admin \\   -X POST \\   -H \&quot;X-Atlassian-Token: nocheck\&quot; \\   -F \&quot;file&#x3D;@example.txt\&quot; \\   -F \&quot;minorEdit&#x3D;true\&quot; \\   -F \&quot;comment&#x3D;Example attachment comment\&quot; \\   http://myhost/rest/api/content/123/child/attachment/att456/data &#x60;&#x60;&#x60; **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentDataPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceAttachmentResourceUpdateAttachmentDataPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentDataPost(id, attachmentId, opts, callback) {
+    confluenceAttachmentResourceUpdateAttachmentDataPost(id, attachmentId, opts, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -234,8 +234,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentPropertiesPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentPropertiesPutCallback
+     * Callback function to receive the result of the confluenceAttachmentResourceUpdateAttachmentPropertiesPut operation.
+     * @callback module:api/ContentApi~confluenceAttachmentResourceUpdateAttachmentPropertiesPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -244,10 +244,10 @@ export default class ContentApi {
     /**
      * Update attachment properties
      * Updates the attachment properties, i.e. the non-binary data of an attachment like the filename, media-type, comment, and parent container.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentPropertiesPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceAttachmentResourceUpdateAttachmentPropertiesPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesAttachmentResourceUpdateAttachmentPropertiesPut(body, id, attachmentId, callback) {
+    confluenceAttachmentResourceUpdateAttachmentPropertiesPut(body, id, attachmentId, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -273,8 +273,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenByTypeGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenByTypeGetCallback
+     * Callback function to receive the result of the confluenceChildContentResourceGetContentChildrenByTypeGet operation.
+     * @callback module:api/ContentApi~confluenceChildContentResourceGetContentChildrenByTypeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -284,10 +284,10 @@ export default class ContentApi {
      * Get content children by type
      * Returns all children of a given type, for a piece of content. A piece of content has different types of child content, depending on its type:  - &#x60;page&#x60;: child content is &#x60;page&#x60;, &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;blogpost&#x60;: child content is &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;attachment&#x60;: child content is &#x60;comment&#x60; - &#x60;comment&#x60;: child content is &#x60;attachment&#x60;  Custom content types that are provided by apps can also be returned.  Note, this method only returns direct children. To return children at all levels, use [Get descendants by type](#api-content-id-descendant-type-get).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenByTypeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceChildContentResourceGetContentChildrenByTypeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenByTypeGet(id, type, opts, callback) {
+    confluenceChildContentResourceGetContentChildrenByTypeGet(id, type, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -318,8 +318,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenGetCallback
+     * Callback function to receive the result of the confluenceChildContentResourceGetContentChildrenGet operation.
+     * @callback module:api/ContentApi~confluenceChildContentResourceGetContentChildrenGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentChildren} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -329,10 +329,10 @@ export default class ContentApi {
      * Get content children
      * Returns a map of the direct children of a piece of content. A piece of content has different types of child content, depending on its type. These are the default parent-child content type relationships:  - &#x60;page&#x60;: child content is &#x60;page&#x60;, &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;blogpost&#x60;: child content is &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;attachment&#x60;: child content is &#x60;comment&#x60; - &#x60;comment&#x60;: child content is &#x60;attachment&#x60;  Apps can override these default relationships. Apps can also introduce new content types that create new parent-child content relationships.  Note, the map will always include all child content types that are valid for the content. However, if the content has no instances of a child content type, the map will contain an empty array for that child content type.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceChildContentResourceGetContentChildrenGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentChildren}
      */
-    comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentChildrenGet(id, opts, callback) {
+    confluenceChildContentResourceGetContentChildrenGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -360,8 +360,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentCommentsGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentCommentsGetCallback
+     * Callback function to receive the result of the confluenceChildContentResourceGetContentCommentsGet operation.
+     * @callback module:api/ContentApi~confluenceChildContentResourceGetContentCommentsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -371,10 +371,10 @@ export default class ContentApi {
      * Get content comments
      * Returns the comments on a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentCommentsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceChildContentResourceGetContentCommentsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesChildContentResourceGetContentCommentsGet(id, opts, callback) {
+    confluenceChildContentResourceGetContentCommentsGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -406,8 +406,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishLegacyDraftPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishLegacyDraftPostCallback
+     * Callback function to receive the result of the confluenceContentBlueprintResourcePublishLegacyDraftPost operation.
+     * @callback module:api/ContentApi~confluenceContentBlueprintResourcePublishLegacyDraftPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -417,10 +417,10 @@ export default class ContentApi {
      * Publish legacy draft
      * Publishes a legacy draft of a page created from a blueprint. Legacy drafts will eventually be removed in favor of shared drafts. For now, this method works the same as [Publish shared draft](#api-content-blueprint-instance-draftId-put).  By default, the following objects are expanded: &#x60;body.storage&#x60;, &#x60;history&#x60;, &#x60;space&#x60;, &#x60;version&#x60;, &#x60;ancestors&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the draft and &#x27;Add&#x27; permission for the space that the content will be created in.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishLegacyDraftPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentBlueprintResourcePublishLegacyDraftPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishLegacyDraftPost(body, draftId, opts, callback) {
+    confluenceContentBlueprintResourcePublishLegacyDraftPost(body, draftId, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -448,8 +448,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishSharedDraftPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishSharedDraftPutCallback
+     * Callback function to receive the result of the confluenceContentBlueprintResourcePublishSharedDraftPut operation.
+     * @callback module:api/ContentApi~confluenceContentBlueprintResourcePublishSharedDraftPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -459,10 +459,10 @@ export default class ContentApi {
      * Publish shared draft
      * Publishes a shared draft of a page created from a blueprint.  By default, the following objects are expanded: &#x60;body.storage&#x60;, &#x60;history&#x60;, &#x60;space&#x60;, &#x60;version&#x60;, &#x60;ancestors&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the draft and &#x27;Add&#x27; permission for the space that the content will be created in.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishSharedDraftPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentBlueprintResourcePublishSharedDraftPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentBlueprintResourcePublishSharedDraftPut(body, draftId, opts, callback) {
+    confluenceContentBlueprintResourcePublishSharedDraftPut(body, draftId, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -490,8 +490,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceAddLabelsToContentPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceAddLabelsToContentPostCallback
+     * Callback function to receive the result of the confluenceContentLabelsResourceAddLabelsToContentPost operation.
+     * @callback module:api/ContentApi~confluenceContentLabelsResourceAddLabelsToContentPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LabelArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -500,10 +500,10 @@ export default class ContentApi {
     /**
      * Add labels to content
      * Adds labels to a piece of content. Does not modify the existing labels.  Notes:  - Labels can also be added when creating content ([Create content](#api-content-post)). - Labels can be updated when updating content ([Update content](#api-content-id-put)). This will delete the existing labels and replace them with the labels in the request.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceAddLabelsToContentPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentLabelsResourceAddLabelsToContentPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LabelArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceAddLabelsToContentPost(body, id, callback) {
+    confluenceContentLabelsResourceAddLabelsToContentPost(body, id, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -528,8 +528,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceGetLabelsForContentGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceGetLabelsForContentGetCallback
+     * Callback function to receive the result of the confluenceContentLabelsResourceGetLabelsForContentGet operation.
+     * @callback module:api/ContentApi~confluenceContentLabelsResourceGetLabelsForContentGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LabelArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -539,10 +539,10 @@ export default class ContentApi {
      * Get labels for content
      * Returns the labels on a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceGetLabelsForContentGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentLabelsResourceGetLabelsForContentGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LabelArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceGetLabelsForContentGet(id, opts, callback) {
+    confluenceContentLabelsResourceGetLabelsForContentGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -571,8 +571,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentDeleteCallback
+     * Callback function to receive the result of the confluenceContentLabelsResourceRemoveLabelFromContentDelete operation.
+     * @callback module:api/ContentApi~confluenceContentLabelsResourceRemoveLabelFromContentDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -581,9 +581,9 @@ export default class ContentApi {
     /**
      * Remove label from content
      * Removes a label from a piece of content. This is similar to [Remove label from content using query parameter](#api-content-id-label-delete) except that the label name is specified via a path parameter.  Use this method if the label name does not have \&quot;/\&quot; characters, as the path parameter does not accept \&quot;/\&quot; characters for security reasons. Otherwise, use [Remove label from content using query parameter](#api-content-id-label-delete).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentLabelsResourceRemoveLabelFromContentDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentDelete(id, label, callback) {
+    confluenceContentLabelsResourceRemoveLabelFromContentDelete(id, label, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -609,8 +609,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDeleteCallback
+     * Callback function to receive the result of the confluenceContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDelete operation.
+     * @callback module:api/ContentApi~confluenceContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -620,9 +620,9 @@ export default class ContentApi {
      * Remove label from content using query parameter
      * Removes a label from a piece of content. This is similar to [Remove label from content](#api-content-id-label-label-delete) except that the label name is specified via a query parameter.  Use this method if the label name has \&quot;/\&quot; characters, as [Remove label from content using query parameter](#api-content-id-label-delete) does not accept \&quot;/\&quot; characters for the label name.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDelete(id, opts, callback) {
+    confluenceContentLabelsResourceRemoveLabelFromContentUsingQueryParameterDelete(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -649,8 +649,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForPageGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForPageGetCallback
+     * Callback function to receive the result of the confluenceContentNotificationsResourceGetWatchesForPageGet operation.
+     * @callback module:api/ContentApi~confluenceContentNotificationsResourceGetWatchesForPageGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/WatchArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -660,10 +660,10 @@ export default class ContentApi {
      * Get watches for page
      * Returns the watches for a page. A user that watches a page will receive receive notifications when the page is updated.  If you want to manage watches for a page, use the following &#x60;user&#x60; methods:  - [Get content watch status for user](#api-user-watch-content-contentId-get) - [Add content watch](#api-user-watch-content-contentId-post) - [Remove content watch](#api-user-watch-content-contentId-delete)  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForPageGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentNotificationsResourceGetWatchesForPageGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/WatchArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForPageGet(id, opts, callback) {
+    confluenceContentNotificationsResourceGetWatchesForPageGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -691,8 +691,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForSpaceGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForSpaceGetCallback
+     * Callback function to receive the result of the confluenceContentNotificationsResourceGetWatchesForSpaceGet operation.
+     * @callback module:api/ContentApi~confluenceContentNotificationsResourceGetWatchesForSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/WatchArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -702,10 +702,10 @@ export default class ContentApi {
      * Get watches for space
      * Returns all space watches for the space that the content is in. A user that watches a space will receive receive notifications when any content in the space is updated.  If you want to manage watches for a space, use the following &#x60;user&#x60; methods:  - [Get space watch status for user](#api-user-watch-space-spaceKey-get) - [Add space watch](#api-user-watch-space-spaceKey-post) - [Remove space watch](#api-user-watch-space-spaceKey-delete)  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentNotificationsResourceGetWatchesForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/WatchArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentNotificationsResourceGetWatchesForSpaceGet(id, opts, callback) {
+    confluenceContentNotificationsResourceGetWatchesForSpaceGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -733,8 +733,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyForKeyPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyForKeyPostCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceCreateContentPropertyForKeyPost operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceCreateContentPropertyForKeyPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -743,10 +743,10 @@ export default class ContentApi {
     /**
      * Create content property for key
      * Creates a property for an existing piece of content. For more information about content properties, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  This is the same as [Create content property](#api-content-id-property-post) except that the key is specified as a path parameter instead of in the request body.  Content properties can also be added when creating a new piece of content by including them in the &#x60;metadata.properties&#x60; of the request.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyForKeyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceCreateContentPropertyForKeyPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyForKeyPost(body, id, key, callback) {
+    confluenceContentPropertyResourceCreateContentPropertyForKeyPost(body, id, key, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -772,8 +772,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyPostCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceCreateContentPropertyPost operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceCreateContentPropertyPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -782,10 +782,10 @@ export default class ContentApi {
     /**
      * Create content property
      * Creates a property for an existing piece of content. For more information about content properties, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  This is the same as [Create content property for key](#api-content-id-property-key-post) except that the key is specified in the request body instead of as a path parameter.  Content properties can also be added when creating a new piece of content by including them in the &#x60;metadata.properties&#x60; of the request.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceCreateContentPropertyPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceCreateContentPropertyPost(body, id, callback) {
+    confluenceContentPropertyResourceCreateContentPropertyPost(body, id, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -810,8 +810,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceDeleteContentPropertyDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceDeleteContentPropertyDeleteCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceDeleteContentPropertyDelete operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceDeleteContentPropertyDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -820,9 +820,9 @@ export default class ContentApi {
     /**
      * Delete content property
      * Deletes a content property. For more information about content properties, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceDeleteContentPropertyDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceDeleteContentPropertyDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceDeleteContentPropertyDelete(id, key, callback) {
+    confluenceContentPropertyResourceDeleteContentPropertyDelete(id, key, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -848,8 +848,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertiesGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertiesGetCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceGetContentPropertiesGet operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceGetContentPropertiesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentPropertyArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -859,10 +859,10 @@ export default class ContentApi {
      * Get content properties
      * Returns the properties for a piece of content. For more information about content properties, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertiesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceGetContentPropertiesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentPropertyArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertiesGet(id, opts, callback) {
+    confluenceContentPropertyResourceGetContentPropertiesGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -891,8 +891,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertyGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertyGetCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceGetContentPropertyGet operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceGetContentPropertyGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -902,10 +902,10 @@ export default class ContentApi {
      * Get content property
      * Returns a content property for a piece of content. For more information, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertyGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceGetContentPropertyGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceGetContentPropertyGet(id, key, opts, callback) {
+    confluenceContentPropertyResourceGetContentPropertyGet(id, key, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -933,8 +933,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceUpdateContentPropertyPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceUpdateContentPropertyPutCallback
+     * Callback function to receive the result of the confluenceContentPropertyResourceUpdateContentPropertyPut operation.
+     * @callback module:api/ContentApi~confluenceContentPropertyResourceUpdateContentPropertyPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -943,10 +943,10 @@ export default class ContentApi {
     /**
      * Update content property
      * Updates an existing content property. This method will also create a new property for a piece of content, if the property key does not exist and the property version is 1. For more information about content properties, see [Confluence entity properties](https://developer.atlassian.com/cloud/confluence/confluence-entity-properties/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceUpdateContentPropertyPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentPropertyResourceUpdateContentPropertyPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentPropertyResourceUpdateContentPropertyPut(body, id, key, callback) {
+    confluenceContentPropertyResourceUpdateContentPropertyPut(body, id, key, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -972,8 +972,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceCreateContentPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceCreateContentPostCallback
+     * Callback function to receive the result of the confluenceContentResourceCreateContentPost operation.
+     * @callback module:api/ContentApi~confluenceContentResourceCreateContentPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -983,10 +983,10 @@ export default class ContentApi {
      * Create content
      * Creates a new piece of content or publishes an existing draft.  To publish a draft, add the &#x60;id&#x60; and &#x60;status&#x60; properties to the body of the request. Set the &#x60;id&#x60; to the ID of the draft and set the &#x60;status&#x60; to &#x27;current&#x27;. When the request is sent, a new piece of content will be created and the metadata from the draft will be transferred into it.  By default, the following objects are expanded: &#x60;space&#x60;, &#x60;history&#x60;, &#x60;version&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Add&#x27; permission for the space that the content will be created in, and permission to view the draft if publishing a draft.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceCreateContentPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceCreateContentPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceCreateContentPost(body, opts, callback) {
+    confluenceContentResourceCreateContentPost(body, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -1013,8 +1013,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceDeleteContentDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceDeleteContentDeleteCallback
+     * Callback function to receive the result of the confluenceContentResourceDeleteContentDelete operation.
+     * @callback module:api/ContentApi~confluenceContentResourceDeleteContentDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1024,9 +1024,9 @@ export default class ContentApi {
      * Delete content
      * Moves a piece of content to the space&#x27;s trash or purges it from the trash, depending on the content&#x27;s type and status:  - If the content&#x27;s type is &#x60;page&#x60; or &#x60;blogpost&#x60; and its status is &#x60;current&#x60;, it will be trashed. - If the content&#x27;s type is &#x60;page&#x60; or &#x60;blogpost&#x60; and its status is &#x60;trashed&#x60;, the content will be purged from the trash and deleted permanently. Note, you must also set the &#x60;status&#x60; query parameter to &#x60;trashed&#x60; in your request. - If the content&#x27;s type is &#x60;comment&#x60; or &#x60;attachment&#x60;, it will be deleted permanently without being trashed.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Delete&#x27; permission for the space that the content is in, and permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceDeleteContentDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceDeleteContentDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceDeleteContentDelete(id, opts, callback) {
+    confluenceContentResourceDeleteContentDelete(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1053,8 +1053,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentByIdGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentByIdGetCallback
+     * Callback function to receive the result of the confluenceContentResourceGetContentByIdGet operation.
+     * @callback module:api/ContentApi~confluenceContentResourceGetContentByIdGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1064,10 +1064,10 @@ export default class ContentApi {
      * Get content by ID
      * Returns a single piece of content, like a page or a blog post.  By default, the following objects are expanded: &#x60;space&#x60;, &#x60;history&#x60;, &#x60;version&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content. If the content is a blog post, &#x27;View&#x27; permission for the space is required.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentByIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceGetContentByIdGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentByIdGet(id, opts, callback) {
+    confluenceContentResourceGetContentByIdGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1098,8 +1098,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentGetCallback
+     * Callback function to receive the result of the confluenceContentResourceGetContentGet operation.
+     * @callback module:api/ContentApi~confluenceContentResourceGetContentGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1109,10 +1109,10 @@ export default class ContentApi {
      * Get content
      * Returns all content in a Confluence instance.  By default, the following objects are expanded: &#x60;space&#x60;, &#x60;history&#x60;, &#x60;version&#x60;.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission). Only content that the user has permission to view will be returned.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceGetContentGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceGetContentGet(opts, callback) {
+    confluenceContentResourceGetContentGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1147,8 +1147,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceGetHistoryForContentGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetHistoryForContentGetCallback
+     * Callback function to receive the result of the confluenceContentResourceGetHistoryForContentGet operation.
+     * @callback module:api/ContentApi~confluenceContentResourceGetHistoryForContentGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentHistory} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1158,10 +1158,10 @@ export default class ContentApi {
      * Get history for content
      * Returns the most recent update for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetHistoryForContentGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceGetHistoryForContentGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentHistory}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceGetHistoryForContentGet(id, opts, callback) {
+    confluenceContentResourceGetHistoryForContentGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1188,8 +1188,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceGetMacroBodyByMacroIdGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetMacroBodyByMacroIdGetCallback
+     * Callback function to receive the result of the confluenceContentResourceGetMacroBodyByMacroIdGet operation.
+     * @callback module:api/ContentApi~confluenceContentResourceGetMacroBodyByMacroIdGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/MacroInstance} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1198,10 +1198,10 @@ export default class ContentApi {
     /**
      * Get macro body by macro ID
      * Returns the body of a macro in storage format, for the given macro ID. This includes information like the name of the macro, the body of the macro, and any macro parameters. This method is mainly used by Cloud apps.  About the macro ID: When a macro is created in a new version of content, Confluence will generate a random ID for it, unless an ID is specified (by an app). The macro ID will look similar to this: &#x27;50884bd9-0cb8-41d5-98be-f80943c14f96&#x27;. The ID is then persisted as new versions of content are created, and is only modified by Confluence if there are conflicting IDs.  Note, to preserve backwards compatibility this resource will also match on the hash of the macro body, even if a macro ID is found. This check will eventually become redundant, as macro IDs are generated for pages and transparently propagate out to all instances.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content that the macro is in.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceGetMacroBodyByMacroIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceGetMacroBodyByMacroIdGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/MacroInstance}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceGetMacroBodyByMacroIdGet(id, version, macroId, callback) {
+    confluenceContentResourceGetMacroBodyByMacroIdGet(id, version, macroId, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -1228,8 +1228,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceSearchContentByCQLGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceSearchContentByCQLGetCallback
+     * Callback function to receive the result of the confluenceContentResourceSearchContentByCQLGet operation.
+     * @callback module:api/ContentApi~confluenceContentResourceSearchContentByCQLGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1239,10 +1239,10 @@ export default class ContentApi {
      * Search content by CQL
      * Returns the list of content that matches a Confluence Query Language (CQL) query. For information on CQL, see: [Advanced searching using CQL](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission). Only content that the user has permission to view will be returned.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceSearchContentByCQLGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceSearchContentByCQLGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceSearchContentByCQLGet(opts, callback) {
+    confluenceContentResourceSearchContentByCQLGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1272,8 +1272,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentResourceUpdateContentPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceUpdateContentPutCallback
+     * Callback function to receive the result of the confluenceContentResourceUpdateContentPut operation.
+     * @callback module:api/ContentApi~confluenceContentResourceUpdateContentPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Content} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1283,10 +1283,10 @@ export default class ContentApi {
      * Update content
      * Updates a piece of content. Use this method to update the title or body of a piece of content, change the status, change the parent page, and more.  Note, updating draft content is currently not supported.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentResourceUpdateContentPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentResourceUpdateContentPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Content}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentResourceUpdateContentPut(body, id, opts, callback) {
+    confluenceContentResourceUpdateContentPut(body, id, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -1314,8 +1314,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddGroupToContentRestrictionPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddGroupToContentRestrictionPutCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceAddGroupToContentRestrictionPut operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceAddGroupToContentRestrictionPutCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1324,9 +1324,9 @@ export default class ContentApi {
     /**
      * Add group to content restriction
      * Adds a group to a content restriction. That is, grant read or update permission to the group for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddGroupToContentRestrictionPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceAddGroupToContentRestrictionPutCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddGroupToContentRestrictionPut(id, operationKey, groupName, callback) {
+    confluenceContentRestrictionResourceAddGroupToContentRestrictionPut(id, operationKey, groupName, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -1353,8 +1353,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddRestrictionsPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddRestrictionsPostCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceAddRestrictionsPost operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceAddRestrictionsPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentRestrictionArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1364,10 +1364,10 @@ export default class ContentApi {
      * Add restrictions
      * Adds restrictions to a piece of content. Note, this does not change any existing restrictions on the content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddRestrictionsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceAddRestrictionsPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentRestrictionArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddRestrictionsPost(body, id, opts, callback) {
+    confluenceContentRestrictionResourceAddRestrictionsPost(body, id, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -1394,8 +1394,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddUserToContentRestrictionPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddUserToContentRestrictionPutCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceAddUserToContentRestrictionPut operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceAddUserToContentRestrictionPutCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1405,9 +1405,9 @@ export default class ContentApi {
      * Add user to content restriction
      * Adds a user to a content restriction. That is, grant read or update permission to the user for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddUserToContentRestrictionPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceAddUserToContentRestrictionPutCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceAddUserToContentRestrictionPut(id, operationKey, accountId, opts, callback) {
+    confluenceContentRestrictionResourceAddUserToContentRestrictionPut(id, operationKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1437,8 +1437,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceDeleteRestrictionsDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceDeleteRestrictionsDeleteCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceDeleteRestrictionsDelete operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceDeleteRestrictionsDeleteCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentRestrictionArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1448,10 +1448,10 @@ export default class ContentApi {
      * Delete restrictions
      * Removes all restrictions (read and update) on a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceDeleteRestrictionsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceDeleteRestrictionsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentRestrictionArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceDeleteRestrictionsDelete(id, opts, callback) {
+    confluenceContentRestrictionResourceDeleteRestrictionsDelete(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1478,8 +1478,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForGroupGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForGroupGetCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceGetContentRestrictionStatusForGroupGet operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceGetContentRestrictionStatusForGroupGetCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1488,9 +1488,9 @@ export default class ContentApi {
     /**
      * Get content restriction status for group
      * Returns whether the specified content restriction applies to a group. For example, if a page with &#x60;id&#x3D;123&#x60; has a &#x60;read&#x60; restriction for the &#x60;admins&#x60; group, the following request will return &#x60;true&#x60;:  &#x60;https://your-domain.atlassian.net/wiki/rest/api/content/123/restriction/byOperation/read/group/admins&#x60;  Note that a response of &#x60;true&#x60; does not guarantee that the group can view the page, as it does not account for account-inherited restrictions, space permissions, or even product access. For more information, see [Confluence permissions](https://confluence.atlassian.com/x/_AozKw).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForGroupGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceGetContentRestrictionStatusForGroupGetCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForGroupGet(id, operationKey, groupName, callback) {
+    confluenceContentRestrictionResourceGetContentRestrictionStatusForGroupGet(id, operationKey, groupName, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -1517,8 +1517,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForUserGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForUserGetCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceGetContentRestrictionStatusForUserGet operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceGetContentRestrictionStatusForUserGetCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1528,9 +1528,9 @@ export default class ContentApi {
      * Get content restriction status for user
      * Returns whether the specified content restriction applies to a user. For example, if a page with &#x60;id&#x3D;123&#x60; has a &#x60;read&#x60; restriction for a user with an account ID of &#x60;384093:32b4d9w0-f6a5-3535-11a3-9c8c88d10192&#x60;, the following request will return &#x60;true&#x60;:  &#x60;https://your-domain.atlassian.net/wiki/rest/api/content/123/restriction/byOperation/read/user?accountId&#x3D;384093:32b4d9w0-f6a5-3535-11a3-9c8c88d10192&#x60;  Note that a response of &#x60;true&#x60; does not guarantee that the user can view the page, as it does not account for account-inherited restrictions, space permissions, or even product access. For more information, see [Confluence permissions](https://confluence.atlassian.com/x/_AozKw).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceGetContentRestrictionStatusForUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetContentRestrictionStatusForUserGet(id, operationKey, accountId, opts, callback) {
+    confluenceContentRestrictionResourceGetContentRestrictionStatusForUserGet(id, operationKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1560,8 +1560,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsByOperationGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsByOperationGetCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceGetRestrictionsByOperationGet operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsByOperationGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/InlineResponse200} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1571,10 +1571,10 @@ export default class ContentApi {
      * Get restrictions by operation
      * Returns restrictions on a piece of content by operation. This method is similar to [Get restrictions](#api-content-id-restriction-get) except that the operations are properties of the return object, rather than items in a results array.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsByOperationGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsByOperationGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/InlineResponse200}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsByOperationGet(id, opts, callback) {
+    confluenceContentRestrictionResourceGetRestrictionsByOperationGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1601,8 +1601,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsForOperationGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsForOperationGetCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceGetRestrictionsForOperationGet operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsForOperationGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentRestriction} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1612,10 +1612,10 @@ export default class ContentApi {
      * Get restrictions for operation
      * Returns the restictions on a piece of content for a given operation (read or update).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsForOperationGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsForOperationGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentRestriction}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsForOperationGet(id, operationKey, opts, callback) {
+    confluenceContentRestrictionResourceGetRestrictionsForOperationGet(id, operationKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1645,8 +1645,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsGetCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceGetRestrictionsGet operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentRestrictionArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1656,10 +1656,10 @@ export default class ContentApi {
      * Get restrictions
      * Returns the restrictions on a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceGetRestrictionsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentRestrictionArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceGetRestrictionsGet(id, opts, callback) {
+    confluenceContentRestrictionResourceGetRestrictionsGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1688,8 +1688,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveGroupFromContentRestrictionDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveGroupFromContentRestrictionDeleteCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceRemoveGroupFromContentRestrictionDelete operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceRemoveGroupFromContentRestrictionDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1698,9 +1698,9 @@ export default class ContentApi {
     /**
      * Remove group from content restriction
      * Removes a group from a content restriction. That is, remove read or update permission for the group for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveGroupFromContentRestrictionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceRemoveGroupFromContentRestrictionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveGroupFromContentRestrictionDelete(id, operationKey, groupName, callback) {
+    confluenceContentRestrictionResourceRemoveGroupFromContentRestrictionDelete(id, operationKey, groupName, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -1727,8 +1727,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveUserFromContentRestrictionDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveUserFromContentRestrictionDeleteCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceRemoveUserFromContentRestrictionDelete operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceRemoveUserFromContentRestrictionDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1738,9 +1738,9 @@ export default class ContentApi {
      * Remove user from content restriction
      * Removes a group from a content restriction. That is, remove read or update permission for the group for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveUserFromContentRestrictionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceRemoveUserFromContentRestrictionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceRemoveUserFromContentRestrictionDelete(id, operationKey, accountId, opts, callback) {
+    confluenceContentRestrictionResourceRemoveUserFromContentRestrictionDelete(id, operationKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1770,8 +1770,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceUpdateRestrictionsPut operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceUpdateRestrictionsPutCallback
+     * Callback function to receive the result of the confluenceContentRestrictionResourceUpdateRestrictionsPut operation.
+     * @callback module:api/ContentApi~confluenceContentRestrictionResourceUpdateRestrictionsPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentRestrictionArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1781,10 +1781,10 @@ export default class ContentApi {
      * Update restrictions
      * Updates restrictions for a piece of content. This removes the existing restrictions and replaces them with the restrictions in the request.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to edit the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceUpdateRestrictionsPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentRestrictionResourceUpdateRestrictionsPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentRestrictionArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentRestrictionResourceUpdateRestrictionsPut(body, id, opts, callback) {
+    confluenceContentRestrictionResourceUpdateRestrictionsPut(body, id, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -1811,8 +1811,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceDeleteContentVersionDelete operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceDeleteContentVersionDeleteCallback
+     * Callback function to receive the result of the confluenceContentVersionResourceDeleteContentVersionDelete operation.
+     * @callback module:api/ContentApi~confluenceContentVersionResourceDeleteContentVersionDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -1821,9 +1821,9 @@ export default class ContentApi {
     /**
      * Delete content version
      * Delete a historical version. This does not delete the changes made to the content in that version, rather the changes for the deleted version are rolled up into the next version. Note, you cannot delete the current version.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceDeleteContentVersionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentVersionResourceDeleteContentVersionDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceDeleteContentVersionDelete(id, versionNumber, callback) {
+    confluenceContentVersionResourceDeleteContentVersionDelete(id, versionNumber, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -1849,8 +1849,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionGetCallback
+     * Callback function to receive the result of the confluenceContentVersionResourceGetContentVersionGet operation.
+     * @callback module:api/ContentApi~confluenceContentVersionResourceGetContentVersionGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Version} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1860,10 +1860,10 @@ export default class ContentApi {
      * Get content version
      * Returns a version for a piece of content.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content. If the content is a blog post, &#x27;View&#x27; permission for the space is required.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentVersionResourceGetContentVersionGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Version}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionGet(id, versionNumber, opts, callback) {
+    confluenceContentVersionResourceGetContentVersionGet(id, versionNumber, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1891,8 +1891,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionsGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionsGetCallback
+     * Callback function to receive the result of the confluenceContentVersionResourceGetContentVersionsGet operation.
+     * @callback module:api/ContentApi~confluenceContentVersionResourceGetContentVersionsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/VersionArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1902,10 +1902,10 @@ export default class ContentApi {
      * Get content versions
      * Returns the versions for a piece of content in descending order.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the content. If the content is a blog post, &#x27;View&#x27; permission for the space is required.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentVersionResourceGetContentVersionsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/VersionArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceGetContentVersionsGet(id, opts, callback) {
+    confluenceContentVersionResourceGetContentVersionsGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -1934,8 +1934,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceRestoreContentVersionPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceRestoreContentVersionPostCallback
+     * Callback function to receive the result of the confluenceContentVersionResourceRestoreContentVersionPost operation.
+     * @callback module:api/ContentApi~confluenceContentVersionResourceRestoreContentVersionPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Version} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1945,10 +1945,10 @@ export default class ContentApi {
      * Restore content version
      * Restores a historical version to be the latest version. That is, a new version is created with the content of the historical version.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to update the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceRestoreContentVersionPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceContentVersionResourceRestoreContentVersionPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Version}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentVersionResourceRestoreContentVersionPost(body, id, opts, callback) {
+    confluenceContentVersionResourceRestoreContentVersionPost(body, id, opts, callback) {
       opts = opts || {};
       let postBody = body;
 
@@ -1975,8 +1975,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceDescendantsOfTypeGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceDescendantsOfTypeGetCallback
+     * Callback function to receive the result of the confluenceDescendantContentResourceDescendantsOfTypeGet operation.
+     * @callback module:api/ContentApi~confluenceDescendantContentResourceDescendantsOfTypeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1986,10 +1986,10 @@ export default class ContentApi {
      * Get content descendants by type
      * Returns all descendants of a given type, for a piece of content. This is similar to [Get content children by type](#api-content-id-child-type-get), except that this method returns child pages at all levels, rather than just the direct child pages.  A piece of content has different types of descendants, depending on its type:  - &#x60;page&#x60;: descendant is &#x60;page&#x60;, &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;blogpost&#x60;: descendant is &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;attachment&#x60;: descendant is &#x60;comment&#x60; - &#x60;comment&#x60;: descendant is &#x60;attachment&#x60;  Custom content types that are provided by apps can also be returned.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceDescendantsOfTypeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceDescendantContentResourceDescendantsOfTypeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceDescendantsOfTypeGet(id, type, opts, callback) {
+    confluenceDescendantContentResourceDescendantsOfTypeGet(id, type, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -2019,8 +2019,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceGetContentDescendantsGet operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceGetContentDescendantsGetCallback
+     * Callback function to receive the result of the confluenceDescendantContentResourceGetContentDescendantsGet operation.
+     * @callback module:api/ContentApi~confluenceDescendantContentResourceGetContentDescendantsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentChildren} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -2030,10 +2030,10 @@ export default class ContentApi {
      * Get content descendants
      * Returns a map of the descendants of a piece of content. This is similar to [Get content children](#api-content-id-child-get), except that this method returns child pages at all levels, rather than just the direct child pages.  A piece of content has different types of descendants, depending on its type:  - &#x60;page&#x60;: descendant is &#x60;page&#x60;, &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;blogpost&#x60;: descendant is &#x60;comment&#x60;, &#x60;attachment&#x60; - &#x60;attachment&#x60;: descendant is &#x60;comment&#x60; - &#x60;comment&#x60;: descendant is &#x60;attachment&#x60;  The map will always include all descendant types that are valid for the content. However, if the content has no instances of a descendant type, the map will contain an empty array for that descendant type.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space, and permission to view the content if it is a page.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceGetContentDescendantsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluenceDescendantContentResourceGetContentDescendantsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentChildren}
      */
-    comAtlassianConfluencePluginsRestapiResourcesDescendantContentResourceGetContentDescendantsGet(id, opts, callback) {
+    confluenceDescendantContentResourceGetContentDescendantsGet(id, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -2060,8 +2060,8 @@ export default class ContentApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesPageHierarchyResourceCopyPageHierarchyPost operation.
-     * @callback module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesPageHierarchyResourceCopyPageHierarchyPostCallback
+     * Callback function to receive the result of the confluencePageHierarchyResourceCopyPageHierarchyPost operation.
+     * @callback module:api/ContentApi~confluencePageHierarchyResourceCopyPageHierarchyPostCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -2070,9 +2070,9 @@ export default class ContentApi {
     /**
      * Copy page hierarchy
      * Copy page hierarchy allows the copying of an entire hierarchy of pages and their associated properties, permissions and attachments.  The id path parameter refers to the content id of the page to copy, and the new parent of this copied page is defined using the destinationPageId in the request body.  The titleOptions object defines the rules of renaming page titles during the copy;  for example, search and replace can be used in conjunction to rewrite the copied page titles.   Response example:  &lt;pre&gt;&lt;code&gt;  {       \&quot;id\&quot; : \&quot;1180606\&quot;,       \&quot;links\&quot; : {            \&quot;status\&quot; : \&quot;/rest/api/longtask/1180606\&quot;       }  }  &lt;/code&gt;&lt;/pre&gt;  Use the /longtask/&lt;taskId&gt; REST API to get the copy task status.
-     * @param {module:api/ContentApi~comAtlassianConfluencePluginsRestapiResourcesPageHierarchyResourceCopyPageHierarchyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentApi~confluencePageHierarchyResourceCopyPageHierarchyPostCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesPageHierarchyResourceCopyPageHierarchyPost(body, id, callback) {
+    confluencePageHierarchyResourceCopyPageHierarchyPost(body, id, callback) {
       let postBody = body;
 
       let pathParams = {

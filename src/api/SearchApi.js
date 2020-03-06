@@ -35,8 +35,8 @@ export default class SearchApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchGet operation.
-     * @callback module:api/SearchApi~comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchGetCallback
+     * Callback function to receive the result of the confluenceSearchResourceSearchGet operation.
+     * @callback module:api/SearchApi~confluenceSearchResourceSearchGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SearchPageResponseSearchResult} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -46,10 +46,10 @@ export default class SearchApi {
      * Search
      * Searches for content using the [Confluence Query Language (CQL)](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/)  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to view the entities. Note, only entities that the user has permission to view will be returned.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SearchApi~comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SearchApi~confluenceSearchResourceSearchGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SearchPageResponseSearchResult}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchGet(cql, opts, callback) {
+    confluenceSearchResourceSearchGet(cql, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -79,8 +79,8 @@ export default class SearchApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchUserGet operation.
-     * @callback module:api/SearchApi~comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchUserGetCallback
+     * Callback function to receive the result of the confluenceSearchResourceSearchUserGet operation.
+     * @callback module:api/SearchApi~confluenceSearchResourceSearchUserGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SearchPageResponseSearchResult} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -90,10 +90,10 @@ export default class SearchApi {
      * Search
      * Searches for users using user-specific queries from the [Confluence Query Language (CQL)](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/).  Note that some user fields may be set to null depending on the user&#x27;s privacy settings. These are: email, profilePicture, and displayName.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SearchApi~comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SearchApi~confluenceSearchResourceSearchUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SearchPageResponseSearchResult}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSearchResourceSearchUserGet(cql, opts, callback) {
+    confluenceSearchResourceSearchUserGet(cql, opts, callback) {
       opts = opts || {};
       let postBody = null;
 

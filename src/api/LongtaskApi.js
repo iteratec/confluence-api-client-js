@@ -36,8 +36,8 @@ export default class LongtaskApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTaskGet operation.
-     * @callback module:api/LongtaskApi~comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTaskGetCallback
+     * Callback function to receive the result of the confluenceLongTaskResourceGetTaskGet operation.
+     * @callback module:api/LongtaskApi~confluenceLongTaskResourceGetTaskGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LongTaskStatusWithLinks} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -46,10 +46,10 @@ export default class LongtaskApi {
     /**
      * Get long-running task
      * Returns information about an active long-running task (e.g. space export), such as how long it has been running and the percentage of the task that has completed.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
-     * @param {module:api/LongtaskApi~comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTaskGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/LongtaskApi~confluenceLongTaskResourceGetTaskGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LongTaskStatusWithLinks}
      */
-    comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTaskGet(id, callback) {
+    confluenceLongTaskResourceGetTaskGet(id, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -74,8 +74,8 @@ export default class LongtaskApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTasksGet operation.
-     * @callback module:api/LongtaskApi~comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTasksGetCallback
+     * Callback function to receive the result of the confluenceLongTaskResourceGetTasksGet operation.
+     * @callback module:api/LongtaskApi~confluenceLongTaskResourceGetTasksGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/LongTaskStatusArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -85,10 +85,10 @@ export default class LongtaskApi {
      * Get long-running tasks
      * Returns information about all active long-running tasks (e.g. space export), such as how long each task has been running and the percentage of each task that has completed.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/LongtaskApi~comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTasksGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/LongtaskApi~confluenceLongTaskResourceGetTasksGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/LongTaskStatusArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesLongTaskResourceGetTasksGet(opts, callback) {
+    confluenceLongTaskResourceGetTasksGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 

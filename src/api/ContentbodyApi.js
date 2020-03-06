@@ -36,8 +36,8 @@ export default class ContentbodyApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesContentBodyResourceConvertContentBodyPost operation.
-     * @callback module:api/ContentbodyApi~comAtlassianConfluencePluginsRestapiResourcesContentBodyResourceConvertContentBodyPostCallback
+     * Callback function to receive the result of the confluenceContentBodyResourceConvertContentBodyPost operation.
+     * @callback module:api/ContentbodyApi~confluenceContentBodyResourceConvertContentBodyPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentBody} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,10 +47,10 @@ export default class ContentbodyApi {
      * Convert content body
      * Converts a content body from one format to another format.  Supported conversions:  - storage: view, export_view, styled_view, editor - editor: storage - view: none - export_view: none - styled_view: none  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: If request specifies &#x27;contentIdContext&#x27;, &#x27;View&#x27; permission for the space, and permission to view the content.
      * @param {Object} opts Optional parameters
-     * @param {module:api/ContentbodyApi~comAtlassianConfluencePluginsRestapiResourcesContentBodyResourceConvertContentBodyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ContentbodyApi~confluenceContentBodyResourceConvertContentBodyPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentBody}
      */
-    comAtlassianConfluencePluginsRestapiResourcesContentBodyResourceConvertContentBodyPost(body, to, opts, callback) {
+    confluenceContentBodyResourceConvertContentBodyPost(body, to, opts, callback) {
       opts = opts || {};
       let postBody = body;
 

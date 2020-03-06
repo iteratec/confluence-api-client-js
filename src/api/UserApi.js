@@ -42,8 +42,8 @@ export default class UserApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailBulkGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailBulkGetCallback
+     * Callback function to receive the result of the confluenceUserEmailResourceGetPrivacyUnsafeUserEmailBulkGet operation.
+     * @callback module:api/UserApi~confluenceUserEmailResourceGetPrivacyUnsafeUserEmailBulkGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AccountIdEmailRecordArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -52,10 +52,10 @@ export default class UserApi {
     /**
      * Bulk fetch of users&#x27; email addresses
      * Returns user email addresses for a set of accountIds. This API is only available to apps approved by Atlassian, according to these [guidelines](https://community.developer.atlassian.com/t/guidelines-for-requesting-access-to-email-address/27603).  Any accounts which are not available will not be included in the result.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailBulkGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserEmailResourceGetPrivacyUnsafeUserEmailBulkGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AccountIdEmailRecordArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailBulkGet(accountId, callback) {
+    confluenceUserEmailResourceGetPrivacyUnsafeUserEmailBulkGet(accountId, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -80,8 +80,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailGetCallback
+     * Callback function to receive the result of the confluenceUserEmailResourceGetPrivacyUnsafeUserEmailGet operation.
+     * @callback module:api/UserApi~confluenceUserEmailResourceGetPrivacyUnsafeUserEmailGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AccountIdEmailRecord} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -90,10 +90,10 @@ export default class UserApi {
     /**
      * Get a user&#x27;s email
      * Returns a user&#x27;s email address. This API is only available to apps approved by Atlassian, according to these [guidelines](https://community.developer.atlassian.com/t/guidelines-for-requesting-access-to-email-address/27603).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserEmailResourceGetPrivacyUnsafeUserEmailGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AccountIdEmailRecord}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserEmailResourceGetPrivacyUnsafeUserEmailGet(accountId, callback) {
+    confluenceUserEmailResourceGetPrivacyUnsafeUserEmailGet(accountId, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -118,8 +118,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetAnonymousUserGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetAnonymousUserGetCallback
+     * Callback function to receive the result of the confluenceUserResourceGetAnonymousUserGet operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetAnonymousUserGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/UserAnonymous} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -129,10 +129,10 @@ export default class UserApi {
      * Get anonymous user
      * Returns information about how anonymous users are represented, like the profile picture and display name.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetAnonymousUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetAnonymousUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UserAnonymous}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetAnonymousUserGet(opts, callback) {
+    confluenceUserResourceGetAnonymousUserGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -158,8 +158,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserLookup operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserLookupCallback
+     * Callback function to receive the result of the confluenceUserResourceGetBulkUserLookup operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetBulkUserLookupCallback
      * @param {String} error Error message, if any.
      * @param {module:model/BulkUserLookupArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -169,10 +169,10 @@ export default class UserApi {
      * Get multiple users using ids
      * Returns user details for the ids provided in request.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserLookupCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetBulkUserLookupCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BulkUserLookupArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserLookup(accountId, opts, callback) {
+    confluenceUserResourceGetBulkUserLookup(accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -200,8 +200,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserMigration operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserMigrationCallback
+     * Callback function to receive the result of the confluenceUserResourceGetBulkUserMigration operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetBulkUserMigrationCallback
      * @param {String} error Error message, if any.
      * @param {module:model/MigratedUserArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -211,10 +211,10 @@ export default class UserApi {
      * Get accountIds for users
      * Returns the accountIds for the users specified in the key or username parameters. Note that multiple key and username parameters can be specified.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserMigrationCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetBulkUserMigrationCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/MigratedUserArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetBulkUserMigration(opts, callback) {
+    confluenceUserResourceGetBulkUserMigration(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -243,8 +243,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetCurrentUserGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetCurrentUserGetCallback
+     * Callback function to receive the result of the confluenceUserResourceGetCurrentUserGet operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetCurrentUserGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/User} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -254,10 +254,10 @@ export default class UserApi {
      * Get current user
      * Returns the currently logged-in user. This includes information about the user, like the display name, userKey, account ID, profile picture, and more.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetCurrentUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetCurrentUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/User}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetCurrentUserGet(opts, callback) {
+    confluenceUserResourceGetCurrentUserGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -283,8 +283,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetGroupMembershipsForUserGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetGroupMembershipsForUserGetCallback
+     * Callback function to receive the result of the confluenceUserResourceGetGroupMembershipsForUserGet operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetGroupMembershipsForUserGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/GroupArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -294,10 +294,10 @@ export default class UserApi {
      * Get group memberships for user
      * Returns the groups that a user is a member of.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetGroupMembershipsForUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetGroupMembershipsForUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/GroupArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetGroupMembershipsForUserGet(accountId, opts, callback) {
+    confluenceUserResourceGetGroupMembershipsForUserGet(accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -327,8 +327,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserResourceGetUserGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetUserGetCallback
+     * Callback function to receive the result of the confluenceUserResourceGetUserGet operation.
+     * @callback module:api/UserApi~confluenceUserResourceGetUserGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/User} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -338,10 +338,10 @@ export default class UserApi {
      * Get user
      * Returns a user. This includes information about the user, such as the display name, account ID, profile picture, and more. The information returned may be restricted by the user&#x27;s profile visibility settings.  **Note:** to add, edit, or delete users in your organization, see the [user management REST API](/cloud/admin/user-management/about/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserResourceGetUserGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserResourceGetUserGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/User}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserResourceGetUserGet(accountId, opts, callback) {
+    confluenceUserResourceGetUserGet(accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -370,8 +370,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddContentWatcherPost operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddContentWatcherPostCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceAddContentWatcherPost operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceAddContentWatcherPostCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -381,9 +381,9 @@ export default class UserApi {
      * Add content watcher
      * Adds a user as a watcher to a piece of content. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  Note, you must add the &#x60;X-Atlassian-Token: no-check&#x60; header when making a request, as this operation has XSRF protection.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddContentWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceAddContentWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddContentWatcherPost(contentId, accountId, opts, callback) {
+    confluenceUserWatchResourceAddContentWatcherPost(contentId, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -412,8 +412,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddLabelWatcherPost operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddLabelWatcherPostCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceAddLabelWatcherPost operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceAddLabelWatcherPostCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -423,9 +423,9 @@ export default class UserApi {
      * Add label watcher
      * Adds a user as a watcher to a label. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  Note, you must add the &#x60;X-Atlassian-Token: no-check&#x60; header when making a request, as this operation has XSRF protection.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddLabelWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceAddLabelWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddLabelWatcherPost(labelName, accountId, opts, callback) {
+    confluenceUserWatchResourceAddLabelWatcherPost(labelName, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -454,8 +454,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddSpaceWatcherPost operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddSpaceWatcherPostCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceAddSpaceWatcherPost operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceAddSpaceWatcherPostCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -465,9 +465,9 @@ export default class UserApi {
      * Add space watcher
      * Adds a user as a watcher to a space. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  Note, you must add the &#x60;X-Atlassian-Token: no-check&#x60; header when making a request, as this operation has XSRF protection.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddSpaceWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceAddSpaceWatcherPostCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceAddSpaceWatcherPost(spaceKey, accountId, opts, callback) {
+    confluenceUserWatchResourceAddSpaceWatcherPost(spaceKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -496,8 +496,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceGetContentWatchStatusGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceGetContentWatchStatusGetCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceGetContentWatchStatusGet operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceGetContentWatchStatusGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/UserWatch} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -507,10 +507,10 @@ export default class UserApi {
      * Get content watch status
      * Returns whether a user is watching a piece of content. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceGetContentWatchStatusGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceGetContentWatchStatusGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UserWatch}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceGetContentWatchStatusGet(contentId, accountId, opts, callback) {
+    confluenceUserWatchResourceGetContentWatchStatusGet(contentId, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -539,8 +539,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingLabelGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingLabelGetCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceIsWatchingLabelGet operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceIsWatchingLabelGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/UserWatch} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -550,10 +550,10 @@ export default class UserApi {
      * Get label watch status
      * Returns whether a user is watching a label. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingLabelGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceIsWatchingLabelGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UserWatch}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingLabelGet(labelName, accountId, opts, callback) {
+    confluenceUserWatchResourceIsWatchingLabelGet(labelName, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -582,8 +582,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingSpaceGet operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingSpaceGetCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceIsWatchingSpaceGet operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceIsWatchingSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/UserWatch} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -593,10 +593,10 @@ export default class UserApi {
      * Get space watch status
      * Returns whether a user is watching a space. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceIsWatchingSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/UserWatch}
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceIsWatchingSpaceGet(spaceKey, accountId, opts, callback) {
+    confluenceUserWatchResourceIsWatchingSpaceGet(spaceKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -625,8 +625,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveContentWatcherDelete operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveContentWatcherDeleteCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceRemoveContentWatcherDelete operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceRemoveContentWatcherDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -636,9 +636,9 @@ export default class UserApi {
      * Remove content watcher
      * Removes a user as a watcher from a piece of content. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveContentWatcherDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceRemoveContentWatcherDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveContentWatcherDelete(contentId, accountId, opts, callback) {
+    confluenceUserWatchResourceRemoveContentWatcherDelete(contentId, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -667,8 +667,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveLabelWatcherDelete operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveLabelWatcherDeleteCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceRemoveLabelWatcherDelete operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceRemoveLabelWatcherDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -678,9 +678,9 @@ export default class UserApi {
      * Remove label watcher
      * Removes a user as a watcher from a label. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveLabelWatcherDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceRemoveLabelWatcherDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveLabelWatcherDelete(labelName, accountId, opts, callback) {
+    confluenceUserWatchResourceRemoveLabelWatcherDelete(labelName, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -709,8 +709,8 @@ export default class UserApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveSpaceWatchDelete operation.
-     * @callback module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveSpaceWatchDeleteCallback
+     * Callback function to receive the result of the confluenceUserWatchResourceRemoveSpaceWatchDelete operation.
+     * @callback module:api/UserApi~confluenceUserWatchResourceRemoveSpaceWatchDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -720,9 +720,9 @@ export default class UserApi {
      * Remove space watch
      * Removes a user as a watcher from a space. Choose the user by doing one of the following:  - Specify a user via a query parameter: Use the &#x60;accountId&#x60; to identify the user. - Do not specify a user: The currently logged-in user will be used.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Confluence Administrator&#x27; global permission if specifying a user, otherwise permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/UserApi~comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveSpaceWatchDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/UserApi~confluenceUserWatchResourceRemoveSpaceWatchDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesUserWatchResourceRemoveSpaceWatchDelete(spaceKey, accountId, opts, callback) {
+    confluenceUserWatchResourceRemoveSpaceWatchDelete(spaceKey, accountId, opts, callback) {
       opts = opts || {};
       let postBody = null;
 

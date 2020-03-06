@@ -37,8 +37,8 @@ export default class ExperimentalApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesExperimentalCQLResourceCqlPDCleanerPost operation.
-     * @callback module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesExperimentalCQLResourceCqlPDCleanerPostCallback
+     * Callback function to receive the result of the confluenceExperimentalCQLResourceCqlPDCleanerPost operation.
+     * @callback module:api/ExperimentalApi~confluenceExperimentalCQLResourceCqlPDCleanerPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/CQLPersonalDataConvertedQueries} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,10 +47,10 @@ export default class ExperimentalApi {
     /**
      * Convert user identifiers to account IDs in CQL queries
      * Converts one or more CQL queries with user identifiers (username or user key) to equivalent CQL queries with account IDs.  You may wish to use this operation if your system stores CQL queries and you want to make them GDPR-compliant. For more information about GDPR-related changes, see the [migration guide](https://developer.atlassian.com/cloud/confluence/deprecation-notice-user-privacy-api-migration-guide/).  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: None
-     * @param {module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesExperimentalCQLResourceCqlPDCleanerPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ExperimentalApi~confluenceExperimentalCQLResourceCqlPDCleanerPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/CQLPersonalDataConvertedQueries}
      */
-    comAtlassianConfluencePluginsRestapiResourcesExperimentalCQLResourceCqlPDCleanerPost(body, callback) {
+    confluenceExperimentalCQLResourceCqlPDCleanerPost(body, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -74,8 +74,8 @@ export default class ExperimentalApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceAddPermission operation.
-     * @callback module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceAddPermissionCallback
+     * Callback function to receive the result of the confluenceSpacePermissionResourceAddPermission operation.
+     * @callback module:api/ExperimentalApi~confluenceSpacePermissionResourceAddPermissionCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpacePermissionV2} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -84,10 +84,10 @@ export default class ExperimentalApi {
     /**
      * Add new permission to space
      * Adds new permission to space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceAddPermissionCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ExperimentalApi~confluenceSpacePermissionResourceAddPermissionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpacePermissionV2}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceAddPermission(body, spaceKey, callback) {
+    confluenceSpacePermissionResourceAddPermission(body, spaceKey, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -112,8 +112,8 @@ export default class ExperimentalApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceRemovePermission operation.
-     * @callback module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceRemovePermissionCallback
+     * Callback function to receive the result of the confluenceSpacePermissionResourceRemovePermission operation.
+     * @callback module:api/ExperimentalApi~confluenceSpacePermissionResourceRemovePermissionCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -122,9 +122,9 @@ export default class ExperimentalApi {
     /**
      * Remove a space permission
      * Removes a space permission. Note that removing Read Space permission for a user or group will remove all the space permissions for that user or group.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/ExperimentalApi~comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceRemovePermissionCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ExperimentalApi~confluenceSpacePermissionResourceRemovePermissionCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePermissionResourceRemovePermission(spaceKey, id, callback) {
+    confluenceSpacePermissionResourceRemovePermission(spaceKey, id, callback) {
       let postBody = null;
 
       let pathParams = {

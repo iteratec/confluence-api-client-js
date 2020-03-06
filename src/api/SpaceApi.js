@@ -50,8 +50,8 @@ export default class SpaceApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyForKeyPost operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyForKeyPostCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceCreateSpacePropertyForKeyPost operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceCreateSpacePropertyForKeyPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -60,10 +60,10 @@ export default class SpaceApi {
     /**
      * Create space property for key
      * Creates a new space property. This is the same as &#x60;POST /api/space/{spaceKey}/property&#x60; but the key for the property is passed as a path parameter, rather than in the request body.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘Admin’ permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyForKeyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceCreateSpacePropertyForKeyPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyForKeyPost(body, spaceKey, key, callback) {
+    confluenceSpacePropertyResourceCreateSpacePropertyForKeyPost(body, spaceKey, key, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -89,8 +89,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyPost operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyPostCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceCreateSpacePropertyPost operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceCreateSpacePropertyPostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -99,10 +99,10 @@ export default class SpaceApi {
     /**
      * Create space property
      * Creates a new space property.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘Admin’ permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceCreateSpacePropertyPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceCreateSpacePropertyPost(body, spaceKey, callback) {
+    confluenceSpacePropertyResourceCreateSpacePropertyPost(body, spaceKey, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -127,8 +127,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceDeleteSpacePropertyDelete operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceDeleteSpacePropertyDeleteCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceDeleteSpacePropertyDelete operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceDeleteSpacePropertyDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -137,9 +137,9 @@ export default class SpaceApi {
     /**
      * Delete space property
      * Deletes a space property.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘Admin’ permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceDeleteSpacePropertyDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceDeleteSpacePropertyDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceDeleteSpacePropertyDelete(spaceKey, key, callback) {
+    confluenceSpacePropertyResourceDeleteSpacePropertyDelete(spaceKey, key, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -165,8 +165,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertiesGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertiesGetCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceGetSpacePropertiesGet operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceGetSpacePropertiesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpacePropertyArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -176,10 +176,10 @@ export default class SpaceApi {
      * Get space properties
      * Returns all properties for the given space. Space properties are a key-value storage associated with a space.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘View’ permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertiesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceGetSpacePropertiesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpacePropertyArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertiesGet(spaceKey, opts, callback) {
+    confluenceSpacePropertyResourceGetSpacePropertiesGet(spaceKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -208,8 +208,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertyGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertyGetCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceGetSpacePropertyGet operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceGetSpacePropertyGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -219,10 +219,10 @@ export default class SpaceApi {
      * Get space property
      * Returns a space property.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘View’ permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertyGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceGetSpacePropertyGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceGetSpacePropertyGet(spaceKey, key, opts, callback) {
+    confluenceSpacePropertyResourceGetSpacePropertyGet(spaceKey, key, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -250,8 +250,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceUpdateSpacePropertyPut operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceUpdateSpacePropertyPutCallback
+     * Callback function to receive the result of the confluenceSpacePropertyResourceUpdateSpacePropertyPut operation.
+     * @callback module:api/SpaceApi~confluenceSpacePropertyResourceUpdateSpacePropertyPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceProperty} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -260,10 +260,10 @@ export default class SpaceApi {
     /**
      * Update space property
      * Updates a space property. Note, you cannot update the key of a space property, only the value.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘Admin’ permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceUpdateSpacePropertyPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpacePropertyResourceUpdateSpacePropertyPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceProperty}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpacePropertyResourceUpdateSpacePropertyPut(body, spaceKey, key, callback) {
+    confluenceSpacePropertyResourceUpdateSpacePropertyPut(body, spaceKey, key, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -289,8 +289,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreatePrivateSpacePost operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreatePrivateSpacePostCallback
+     * Callback function to receive the result of the confluenceSpaceResourceCreatePrivateSpacePost operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceCreatePrivateSpacePostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Space} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -299,10 +299,10 @@ export default class SpaceApi {
     /**
      * Create private space
      * Creates a new space that is only visible to the creator. This method is the same as the [Create space](#api-space-post) method with permissions set to the current user only. Note, currently you cannot set space labels when creating a space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Create Space(s)&#x27; global permission.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreatePrivateSpacePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceCreatePrivateSpacePostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Space}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreatePrivateSpacePost(body, callback) {
+    confluenceSpaceResourceCreatePrivateSpacePost(body, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -326,8 +326,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreateSpacePost operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreateSpacePostCallback
+     * Callback function to receive the result of the confluenceSpaceResourceCreateSpacePost operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceCreateSpacePostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Space} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -336,10 +336,10 @@ export default class SpaceApi {
     /**
      * Create space
      * Creates a new space. Note, currently you cannot set space labels when creating a space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Create Space(s)&#x27; global permission.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreateSpacePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceCreateSpacePostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Space}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceCreateSpacePost(body, callback) {
+    confluenceSpaceResourceCreateSpacePost(body, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -363,8 +363,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceDeleteSpaceDelete operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceDeleteSpaceDeleteCallback
+     * Callback function to receive the result of the confluenceSpaceResourceDeleteSpaceDelete operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceDeleteSpaceDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -373,9 +373,9 @@ export default class SpaceApi {
     /**
      * Delete space
      * Deletes a space. Note, the space will be deleted in a long running task. Therefore, the space may not be deleted yet when this method has returned. Clients should poll the status link that is returned in the response until the task completes.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceDeleteSpaceDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceDeleteSpaceDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceDeleteSpaceDelete(spaceKey, callback) {
+    confluenceSpaceResourceDeleteSpaceDelete(spaceKey, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -400,8 +400,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentByTypeForSpaceGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentByTypeForSpaceGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetContentByTypeForSpaceGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetContentByTypeForSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -411,10 +411,10 @@ export default class SpaceApi {
      * Get content by type for space
      * Returns all content of a given type, in a space. The returned content is ordered by content ID in ascending order.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space. Note, the returned list will only contain content that the current user has permission to view.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentByTypeForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetContentByTypeForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentByTypeForSpaceGet(spaceKey, type, opts, callback) {
+    confluenceSpaceResourceGetContentByTypeForSpaceGet(spaceKey, type, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -445,8 +445,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentForSpaceGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentForSpaceGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetContentForSpaceGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetContentForSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -456,10 +456,10 @@ export default class SpaceApi {
      * Get content for space
      * Returns all content in a space. The returned content is grouped by type (pages then blogposts), then ordered by content ID in ascending order.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space. Note, the returned list will only contain content that the current user has permission to view.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetContentForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetContentForSpaceGet(spaceKey, opts, callback) {
+    confluenceSpaceResourceGetContentForSpaceGet(spaceKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -489,8 +489,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetSpaceGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Space} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -500,10 +500,10 @@ export default class SpaceApi {
      * Get space
      * Returns a space. This includes information like the name, description, and permissions, but not the content in the space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Space}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceGet(spaceKey, opts, callback) {
+    confluenceSpaceResourceGetSpaceGet(spaceKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -530,8 +530,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceSettingsGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceSettingsGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetSpaceSettingsGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetSpaceSettingsGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceSettings} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -540,10 +540,10 @@ export default class SpaceApi {
     /**
      * Get space settings
      * Returns the settings of a space. Currently only the &#x60;routeOverrideEnabled&#x60; setting can be returned.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;View&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceSettingsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetSpaceSettingsGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceSettings}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpaceSettingsGet(spaceKey, callback) {
+    confluenceSpaceResourceGetSpaceSettingsGet(spaceKey, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -568,8 +568,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpacesGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpacesGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetSpacesGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetSpacesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -579,10 +579,10 @@ export default class SpaceApi {
      * Get spaces
      * Returns all spaces. The returned spaces are ordered alphabetically in ascending order by space key.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission). Note, the returned list will only contain spaces that the current user has permission to view.
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpacesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetSpacesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetSpacesGet(opts, callback) {
+    confluenceSpaceResourceGetSpacesGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -617,8 +617,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetWatchersForSpaceGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetWatchersForSpaceGetCallback
+     * Callback function to receive the result of the confluenceSpaceResourceGetWatchersForSpaceGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceGetWatchersForSpaceGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceWatchArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -628,10 +628,10 @@ export default class SpaceApi {
      * Returns a list of watchers of a space
      * Returns a list of watchers of a space
      * @param {Object} opts Optional parameters
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetWatchersForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceGetWatchersForSpaceGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceWatchArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceGetWatchersForSpaceGet(spaceKey, opts, callback) {
+    confluenceSpaceResourceGetWatchersForSpaceGet(spaceKey, opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -659,8 +659,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpacePut operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpacePutCallback
+     * Callback function to receive the result of the confluenceSpaceResourceUpdateSpacePut operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceUpdateSpacePutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Space} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -669,10 +669,10 @@ export default class SpaceApi {
     /**
      * Update space
      * Updates the name, description, or homepage of a space.  -   For security reasons, permissions cannot be updated via the API and must be changed via the user interface instead. -   Currently you cannot set space labels when updating a space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpacePutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceUpdateSpacePutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Space}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpacePut(body, spaceKey, callback) {
+    confluenceSpaceResourceUpdateSpacePut(body, spaceKey, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -697,8 +697,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpaceSettingsPut operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpaceSettingsPutCallback
+     * Callback function to receive the result of the confluenceSpaceResourceUpdateSpaceSettingsPut operation.
+     * @callback module:api/SpaceApi~confluenceSpaceResourceUpdateSpaceSettingsPutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/SpaceSettings} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -707,10 +707,10 @@ export default class SpaceApi {
     /**
      * Update space settings
      * Updates the settings for a space. Currently only the &#x60;routeOverrideEnabled&#x60; setting can be updated.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpaceSettingsPutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceResourceUpdateSpaceSettingsPutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SpaceSettings}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceResourceUpdateSpaceSettingsPut(body, spaceKey, callback) {
+    confluenceSpaceResourceUpdateSpaceSettingsPut(body, spaceKey, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -735,8 +735,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceGetSpaceThemeGet operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceGetSpaceThemeGetCallback
+     * Callback function to receive the result of the confluenceSpaceThemeResourceGetSpaceThemeGet operation.
+     * @callback module:api/SpaceApi~confluenceSpaceThemeResourceGetSpaceThemeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Theme} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -745,10 +745,10 @@ export default class SpaceApi {
     /**
      * Get space theme
      * Returns the theme selected for a space, if one is set. If no space theme is set, this means that the space is inheriting the global look and feel settings.  **[Permissions required](https://confluence.atlassian.com/x/_AozKw)**: ‘View’ permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceGetSpaceThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceThemeResourceGetSpaceThemeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Theme}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceGetSpaceThemeGet(spaceKey, callback) {
+    confluenceSpaceThemeResourceGetSpaceThemeGet(spaceKey, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -773,8 +773,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceResetSpaceThemeDelete operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceResetSpaceThemeDeleteCallback
+     * Callback function to receive the result of the confluenceSpaceThemeResourceResetSpaceThemeDelete operation.
+     * @callback module:api/SpaceApi~confluenceSpaceThemeResourceResetSpaceThemeDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -783,9 +783,9 @@ export default class SpaceApi {
     /**
      * Reset space theme
      * Resets the space theme. This means that the space will inherit the global look and feel settings  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceResetSpaceThemeDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceThemeResourceResetSpaceThemeDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceResetSpaceThemeDelete(spaceKey, callback) {
+    confluenceSpaceThemeResourceResetSpaceThemeDelete(spaceKey, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -810,8 +810,8 @@ export default class SpaceApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceSetSpaceThemePut operation.
-     * @callback module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceSetSpaceThemePutCallback
+     * Callback function to receive the result of the confluenceSpaceThemeResourceSetSpaceThemePut operation.
+     * @callback module:api/SpaceApi~confluenceSpaceThemeResourceSetSpaceThemePutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/Theme} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -820,10 +820,10 @@ export default class SpaceApi {
     /**
      * Set space theme
      * Sets the theme for a space. Note, if you want to reset the space theme to the default Confluence theme, use the &#x27;Reset space theme&#x27; method instead of this method.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space.
-     * @param {module:api/SpaceApi~comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceSetSpaceThemePutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SpaceApi~confluenceSpaceThemeResourceSetSpaceThemePutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Theme}
      */
-    comAtlassianConfluencePluginsRestapiResourcesSpaceThemeResourceSetSpaceThemePut(body, spaceKey, callback) {
+    confluenceSpaceThemeResourceSetSpaceThemePut(body, spaceKey, callback) {
       let postBody = body;
 
       let pathParams = {

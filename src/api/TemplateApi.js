@@ -39,8 +39,8 @@ export default class TemplateApi {
     }
 
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceCreateContentTemplatePost operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceCreateContentTemplatePostCallback
+     * Callback function to receive the result of the confluenceTemplateResourceCreateContentTemplatePost operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceCreateContentTemplatePostCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentTemplate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -49,10 +49,10 @@ export default class TemplateApi {
     /**
      * Create content template
      * Creates a new content template. Note, blueprint templates cannot be created via the REST API.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space to create a space template or &#x27;Confluence Administrator&#x27; global permission to create a global template.
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceCreateContentTemplatePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceCreateContentTemplatePostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentTemplate}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceCreateContentTemplatePost(body, callback) {
+    confluenceTemplateResourceCreateContentTemplatePost(body, callback) {
       let postBody = body;
 
       let pathParams = {
@@ -76,8 +76,8 @@ export default class TemplateApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetBlueprintTemplatesGet operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetBlueprintTemplatesGetCallback
+     * Callback function to receive the result of the confluenceTemplateResourceGetBlueprintTemplatesGet operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceGetBlueprintTemplatesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/BlueprintTemplateArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -87,10 +87,10 @@ export default class TemplateApi {
      * Get blueprint templates
      * Returns all templates provided by blueprints. Use this method to retrieve all global blueprint templates or all blueprint templates in a space.  Note, all global blueprints are inherited by each space. Space blueprints can be customised without affecting the global blueprints.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: Permission to access the Confluence site (&#x27;Can use&#x27; global permission).
      * @param {Object} opts Optional parameters
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetBlueprintTemplatesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceGetBlueprintTemplatesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BlueprintTemplateArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetBlueprintTemplatesGet(opts, callback) {
+    confluenceTemplateResourceGetBlueprintTemplatesGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -119,8 +119,8 @@ export default class TemplateApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplateGet operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplateGetCallback
+     * Callback function to receive the result of the confluenceTemplateResourceGetContentTemplateGet operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceGetContentTemplateGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentTemplate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -129,10 +129,10 @@ export default class TemplateApi {
     /**
      * Get content template
      * Returns a content template. This includes information about template, like the name, the space or blueprint that the template is in, the body of the template, and more.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space to view space templates and &#x27;Confluence Administrator&#x27; global permission to view global templates.
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplateGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceGetContentTemplateGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentTemplate}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplateGet(contentTemplateId, callback) {
+    confluenceTemplateResourceGetContentTemplateGet(contentTemplateId, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -157,8 +157,8 @@ export default class TemplateApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplatesGet operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplatesGetCallback
+     * Callback function to receive the result of the confluenceTemplateResourceGetContentTemplatesGet operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceGetContentTemplatesGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentTemplateArray} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -168,10 +168,10 @@ export default class TemplateApi {
      * Get content templates
      * Returns all content templates. Use this method to retrieve all global content templates or all content templates in a space.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space to view space templates and &#x27;Confluence Administrator&#x27; global permission to view global templates.
      * @param {Object} opts Optional parameters
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplatesGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceGetContentTemplatesGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentTemplateArray}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceGetContentTemplatesGet(opts, callback) {
+    confluenceTemplateResourceGetContentTemplatesGet(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -200,8 +200,8 @@ export default class TemplateApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceRemoveTemplateDelete operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceRemoveTemplateDeleteCallback
+     * Callback function to receive the result of the confluenceTemplateResourceRemoveTemplateDelete operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceRemoveTemplateDeleteCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -210,9 +210,9 @@ export default class TemplateApi {
     /**
      * Remove template
      * Deletes a template. This results in different actions depending on the type of template:  - If the template is a content template, it is deleted. - If the template is a modified space-level blueprint template, it reverts to the template inherited from the global-level blueprint template. - If the template is a modified global-level blueprint template, it reverts to the default global-level blueprint template.   Note, unmodified blueprint templates cannot be deleted.
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceRemoveTemplateDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceRemoveTemplateDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceRemoveTemplateDelete(contentTemplateId, callback) {
+    confluenceTemplateResourceRemoveTemplateDelete(contentTemplateId, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -237,8 +237,8 @@ export default class TemplateApi {
       );
     }
     /**
-     * Callback function to receive the result of the comAtlassianConfluencePluginsRestapiResourcesTemplateResourceUpdateContentTemplatePut operation.
-     * @callback module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceUpdateContentTemplatePutCallback
+     * Callback function to receive the result of the confluenceTemplateResourceUpdateContentTemplatePut operation.
+     * @callback module:api/TemplateApi~confluenceTemplateResourceUpdateContentTemplatePutCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ContentTemplate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -247,10 +247,10 @@ export default class TemplateApi {
     /**
      * Update content template
      * Updates a content template. Note, blueprint templates cannot be updated via the REST API.  **[Permissions](https://confluence.atlassian.com/x/_AozKw) required**: &#x27;Admin&#x27; permission for the space to create a space template or &#x27;Confluence Administrator&#x27; global permission to create a global template.
-     * @param {module:api/TemplateApi~comAtlassianConfluencePluginsRestapiResourcesTemplateResourceUpdateContentTemplatePutCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TemplateApi~confluenceTemplateResourceUpdateContentTemplatePutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ContentTemplate}
      */
-    comAtlassianConfluencePluginsRestapiResourcesTemplateResourceUpdateContentTemplatePut(body, callback) {
+    confluenceTemplateResourceUpdateContentTemplatePut(body, callback) {
       let postBody = body;
 
       let pathParams = {
