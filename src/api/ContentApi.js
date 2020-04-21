@@ -1431,7 +1431,7 @@ export default class ContentApi {
       let returnType = null;
 
       return this.apiClient.callApi(
-        '/api/content/{id}/restriction/byOperation/{operationKey}/user', 'PUT',
+        '/experimental/content/{id}/restriction/byOperation/{operationKey}/user', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
